@@ -36,3 +36,96 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* Style for Web Scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+  height: 12px; /* Scrollbar height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #215E89; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #fff; /* Optional: Adds a white border around the thumb for separation */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Light background for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Optional: Add hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #215E89; /* A darker shade on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #215E89; /* Darker color when scrollbar is in use */
+}
+
+
+/* Header styles */
+#header .navbar {
+  background-color: #fff; /* White background for the navbar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
+
+#header .navbar-brand {
+  max-width: 250px;
+}
+
+#header .nav-link {
+  color: #333; /* Default text color */
+  font-weight: 500;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  position: relative; /* For the underline effect */
+  transition: all 0.3s ease; /* For smooth transitions */
+}
+
+/* Hover effect on nav links */
+#header .nav-link:hover {
+  color: #215E89; /* Change to pinkish color on hover */
+}
+
+#header .nav-link:before {
+  content: ''; /* Create the underline */
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #215E89; /* Underline color */
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+#header .nav-link:hover:before {
+  width: 100%; /* On hover, expand the underline to full width */
+}
+
+#header .nav-link.active {
+  color: #215E89; /* Orange color for active link */
+}
+
+#header .nav-link.active:before {
+  width: 100%; /* Full width underline for active state */
+}
+
+.header-btn {
+  background-color: #215E89;
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px; 
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.header-btn:hover {
+  background-color: #042842; 
+  transform: scale(1.05); 
+}
