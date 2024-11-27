@@ -1,0 +1,99 @@
+
+.items{
+  width:90%;
+  margin:0px auto;
+  margin-top: 100px;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 0px solid #fff;
+}
+
+.secondformsec-container {
+    padding: 50px 0;
+  }
+  
+  .secondformsec-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .secondformsec-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+  
+  .secondformsec-images .secondformsec-small-logo {
+    /* width: 50px; */
+    height: auto;
+  }
+  
+  .secondformsec-form {
+    background-color: #215e89;
+    border-radius: 8px;
+    color: white;
+    width: 450px;
+    place-self: center;
+}
+
+
+  .secondformsec-form-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+  .secondformsec-input {
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+  }
+  
+  .secondformsec-input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #66afe9;
+  }
+  
+  .secondformsec-error {
+    color: #ff4d4f;
+    font-size: 0.9rem;
+  }
+  
+  .secondformsec-btn {
+    background-color: #1fb8f0;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+  
+  .secondformsec-btn:hover {
+    background-color: #1591c4;
+  }
+  
+  @media (max-width: 768px) {
+    .secondformsec-images .secondformsec-small-logo {
+      width: 67px;
+      height: auto;
+  }
+    .secondformsec-form {
+        width: 320px;
+    }
+    .secondformsec-container {
+      padding: 20px;
+    }
+    .secondformsec-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
