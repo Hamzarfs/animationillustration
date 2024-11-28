@@ -1,0 +1,206 @@
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* 80% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover; /* Ensure background image always covers the section */
+    background-repeat: no-repeat;
+    /* animation: zoomInBackground 15s ease-in-out infinite;  */
+}
+
+/* Dark overlay */
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Content container inside the banner */
+.banner-container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Subheading for the banner */
+.banner-subheading {
+    font-size: 1rem; /* Small size for mobile */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+/* Hero title */
+.banner-hero-title {
+    font-size: 4vw; /* This makes the font size responsive (relative to viewport width) */
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Description text */
+.banner-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Button styling */
+.banner-cta-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #215E89;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+/* Button hover effect */
+.banner-cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        height: 60vh; /* Adjust the height for mobile screens */
+    }
+
+    .banner-hero-title {
+        font-size: 6vw; /* Adjust the hero title size for smaller screens */
+    }
+
+    .banner-subheading {
+        font-size: 0.8rem; /* Smaller subheading for mobile */
+    }
+
+    .banner-description {
+        font-size: 0.9rem; /* Adjust description size */
+    }
+
+    .banner-cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Larger screens (Tablets and Small Desktops) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        height: 80vh; /* Adjust banner height for tablet screens */
+    }
+
+    .banner-hero-title {
+        font-size: 2rem; /* Adjust font size for tablets */
+        margin-bottom: 20px;
+    }
+
+    .banner-subheading {
+        font-size: 1rem; /* Adjust subheading for tablets */
+    }
+
+    .banner-description {
+        font-size: 1rem; /* Adjust description size */
+    }
+
+    .banner-cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Larger screens (Desktops) */
+@media (min-width: 1024px) {
+    .banner {
+        height: 80vh; /* Keep height for larger screens */
+    }
+
+    .banner-hero-title {
+        font-size: 4.5rem; /* Larger font size for desktop */
+        margin-bottom: 30px;
+    }
+
+    .banner-cta-button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+}
+
+/* Larger screens (Tablets and Small Desktops) */
+@media (min-width: 1024px) and (max-width:4000px ) {
+    .banner {
+        height: 80vh; /* Adjust banner height for tablet screens */
+    }
+
+    .banner-hero-title {
+        font-size: 3.5rem; /* Adjust font size for tablets */
+        margin-bottom: 20px;
+    }
+
+    .banner-subheading {
+        font-size: 1rem; /* Adjust subheading for tablets */
+    }
+
+    .banner-description {
+        font-size: 1rem; /* Adjust description size */
+    }
+
+    .banner-cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes zoomInBackground {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 120%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
