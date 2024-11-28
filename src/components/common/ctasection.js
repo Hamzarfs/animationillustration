@@ -4,7 +4,7 @@ import '../../awards.css';
 const CtaSection = () => {
   return (
     <section className="unique-section">
-      <div className="container my-5">
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="d-flex justify-content-between align-items-center unique-section-container">

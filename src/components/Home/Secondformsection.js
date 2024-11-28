@@ -5,6 +5,7 @@ import clutchicon from "../../images/clutchicon.png"
 import trust from "../../images/trustpiloticon.png"
 import bark from "../../images/barkicon.png"
 import accredited from "../../images/accredited.png"
+import bgimgsecond from "../../images/bgblue.webp"
 
 const SecondFormSec = () => {
   const [formData, setFormData] = useState({
@@ -57,13 +58,19 @@ const SecondFormSec = () => {
   };
 
   return (
-    <div className="secondformsec-container container my-5">
+    <section className="secondformsec" 
+    // style={{ backgroundImage: `url(${bgimgsecond})`, backgroundPosition: 'center',
+    // backgroundSize: 'cover',
+    // backgroundRepeat: 'no-repeat',
+    // }}
+    >
+    <div className="secondformsec-container container " >
       <div className="row align-items-center">
         {/* Left Column */}
-        <div className="col-lg-6 col-md-12 py-3">
+        <div className="col-lg-6 col-md-12">
           <h2 className="secondformsec-heading">Animation Production Company</h2>
           <p className="secondformsec-description">
-          Prolific animation studio is an LA – based animation production company offering modern and visually striking 2D/3D animated videos and logo animations. Our comprehensive list of 2D/3D animation services includes popular services such as explainer videos, game animations, game trailers cutscenes, logo animation, medical animation, cartoon animation, training videos, commercial animation, whiteboard animation, product modelling & animation, architectural rendering, live-action videos & more.
+            Prolific animation studio is an LA – based animation production company offering modern and visually striking 2D/3D animated videos and logo animations. Our comprehensive list of 2D/3D animation services includes popular services such as explainer videos, game animations, game trailers cutscenes, logo animation, medical animation, cartoon animation, training videos, commercial animation, whiteboard animation, product modelling & animation, architectural rendering, live-action videos & more.
           </p>
           <div className="secondformsec-images d-flex gap-3">
             <a href="https://trustpilot.com" target="_blank" rel="noopener noreferrer">
@@ -152,6 +159,7 @@ const SecondFormSec = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

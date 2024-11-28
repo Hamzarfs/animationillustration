@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import animationlogo from '../../images/AnimationRushlogo.png';
+import animationlogo from '../../images/animatedlogo.gif';
 import { NavLink } from 'react-router-dom';  // Change Link to NavLink
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // For JS functionality (hamburger)
@@ -21,7 +21,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-xl bg-body-tertiary">
                 <div className="container">
                     <NavLink to="/" exact className="navbar-brand">
-                        <img src={animationlogo} alt="Brand Logo" />
+                        <img className='animatedlogo' src={animationlogo} alt="Brand Logo" />
                     </NavLink>
 
                     <button

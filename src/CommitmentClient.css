@@ -1,0 +1,108 @@
+/* Main Section Styling */
+.commitmentclient-sec {
+    background-color: #ffffff;
+    border-right: 5px solid #FFCC00;
+    border-top: 5px solid #FFCC00;
+    border-radius: 50px 250px 250px 50px;
+    box-shadow: 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 68px 55px 54px 55px;
+}
+  
+  /* Headings and Descriptions */
+  .commitmentclient-heading {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .commitmentclient-description {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 30px;
+  }
+  
+  /* Icon Box Styling */
+  .icon-box {
+    padding: 15px;
+  }
+  
+  .icon-box-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .icon-box-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #215E88;
+  }
+  
+  .icon-box-text {
+    font-size: 0.85rem;
+    color: #555555;
+  }
+  
+  /* Right Column Image */
+  .commitmentclient-right img {
+    height: 627px;
+
+    align-self: center;
+}
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .commitmentclient-heading {
+      font-size: 1.8rem;
+    }
+    .commitmentclient-description {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .commitmentclient-sec {
+      padding: 20px;
+      border-radius: 30px;
+    }
+    .commitmentclient-heading {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+   
+    .commitmentclient-heading {
+      font-size: 1.4rem;
+    }
+    .commitmentclient-description {
+      font-size: 0.9rem;
+    }
+    .icon-box-title {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .commitmentclient-right img {
+        height: 407px;
+        width: 310px;
+        align-self: center;
+        object-fit: scale-down;
+    }
+    .commitmentclient-sec {
+        width: 320px;
+    }
+    .commitmentclient-sec {
+      padding: 15px;
+      border-radius: 20px;
+    }
+    .icon-box-image {
+      width: 50px;
+      height: 50px;
+    }
+    .icon-box-title {
+      font-size: 0.85rem;
+    }
+  }
+  

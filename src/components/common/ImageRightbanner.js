@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../ImageRightbanner.css';
 
-const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHeight, imageWidth, objectfit, borderRadius, reverseOrder, updatePopupTitle, headinglightblue,heading2 }) => {
+const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHeight, imageWidth, objectfit, borderRadius, reverseOrder, updatePopupTitle, headinglightblue, heading2 }) => {
     return (
         <section className="image-right-banner">
-            <div className="container">
+            <div className="container py-5">
                 <div className="row align-items-center">
                     {/* Left Column: Text or Image based on reverseOrder */}
                     <div className={`col-12 col-md-6 mb-4 mb-md-0 ${reverseOrder ? 'order-md-2' : ''}`}>
@@ -17,7 +17,7 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
                     </div>
 
                     {/* Right Column: Image or Text based on reverseOrder */}
-                    <div className={`col-12 col-md-6 text-center ${reverseOrder ? 'order-md-1' : ''}`} style={{ minHeight: imageHeight }}>
+                    <div className={`col-12 col-md-6 text-center align-content-center ${reverseOrder ? 'order-md-1' : ''}`} style={{ minHeight: imageHeight }}>
                         <img
                             src={imageSrc}
                             alt="Ghostwriting"

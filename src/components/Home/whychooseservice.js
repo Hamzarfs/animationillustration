@@ -11,7 +11,7 @@ const WhyChooseService = ({
   {/* First Row: Heading and Description */}
   <div className="row">
     <div className="col-12 text-center">
-      <h2 className="choose-service-heading font-weight-bold ">
+      <h2 className="choose-service-heading font-weight-bold">
         {heading.title} <span className="lightblue-h2">{heading.highlight}</span>{heading.title2}
       </h2>
       <p className="choose-service-description">{description}</p>

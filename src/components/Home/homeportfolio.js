@@ -58,15 +58,7 @@ const PortfolioGallery = () => {
 
           {/* Second Row of Swiper */}
           <Swiper {...swiperSettings}>
-            <SwiperSlide>
-              <img src={logo1} alt="Portfolio Item 1" className="img-fluid" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={logo2} alt="Portfolio Item 2" className="img-fluid" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={logo3} alt="Portfolio Item 3" className="img-fluid" />
-            </SwiperSlide>
+           
             <SwiperSlide>
               <img src={logo4} alt="Portfolio Item 4" className="img-fluid" />
             </SwiperSlide>
