@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/common/header';
 import Footer from '../components/common/footer';
 import ContactUsform from '../components/Contactus/contactus';
-<<<<<<< HEAD
 import { Helmet } from 'react-helmet-async';
-=======
 import ImageRightBanner from '../components/common/ImageRightbanner';
 import aboutus1 from '../images/aboutus2.gif';
 import aboutus2 from '../images/missionvision.gif';
@@ -19,7 +17,6 @@ import appvalues1 from '../images/Appvalues1.png';
 import appvalues2 from '../images/Appvalues2.png';
 import appvalues3 from '../images/Appvalues3.png';
 import appvalues4 from '../images/Appvalues4.png';
->>>>>>> hamza
 
 const About = () => {
 
@@ -88,7 +85,6 @@ const About = () => {
     return (
         <div>
             <Header/>
-<<<<<<< HEAD
             <Helmet>
                 <title>About Us | Animation Rush</title>
                 <meta name="description" content="Explore Animation Rush—our mission, vision, and the creative team driving our innovative digital solutions. Learn about our story on our About Us page." />
@@ -96,7 +92,6 @@ const About = () => {
             </Helmet>
             <ContactUsform/>
             <Footer/>
-=======
             <ImageRightBanner
                 // subHeading="ABOUT US"
                 heading="Innovative App"
@@ -148,7 +143,6 @@ const About = () => {
             />
  <FAQSection faqs={faqs} image={faqimg} />
                     <Footer/>
->>>>>>> hamza
         </div>
     );
 };

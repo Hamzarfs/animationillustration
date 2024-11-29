@@ -11,10 +11,11 @@ const OurProcess = () => {
         <div>
             <Header/>
             <Helmet>
-                <title>Our Process | Animation Rush</title>
-                <meta name="description" content="Learn how we create amazing video animations! From brainstorming ideas to final delivery, our process ensures top visuals tailored just for you." />
-                <link rel="canonical" href="https://animationrush.com/our-process" />
+                <title>Privacy Policy - Animation Rush</title>
+                <meta name="description" content="Explore Animation Rush's Privacy Policy to understand how we collect, use, and protect your data. Learn more about our practices today." />
+                <link rel="canonical" href="https://animationrush.com/privacy-policy" />
             </Helmet>
+
             <StepSection/>
             <Footer/>
         </div>

@@ -11,9 +11,9 @@ const OurProcess = () => {
         <div>
             <Header/>
             <Helmet>
-                <title>Our Process | Animation Rush</title>
-                <meta name="description" content="Learn how we create amazing video animations! From brainstorming ideas to final delivery, our process ensures top visuals tailored just for you." />
-                <link rel="canonical" href="https://animationrush.com/our-process" />
+                <title>Terms & Conditions - Animation Rush</title>
+                <meta name="description" content="Review the Terms and Conditions of Animation Rush. Understand your rights, our policies, and guidelines for a transparent collaboration." />
+                <link rel="canonical" href="https://animationrush.com/terms-conditions" />
             </Helmet>
             <StepSection/>
             <Footer/>

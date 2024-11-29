@@ -3,10 +3,7 @@ import Step01 from "../../images/step1.gif";
 import Step02 from "../../images/step2.gif";
 import Step03 from "../../images/step3.gif";
 import Step04 from "../../images/step4.gif";
-
 import '../../Stepsection.css';
-
-
 
 const StepSection = () => {
   return (
