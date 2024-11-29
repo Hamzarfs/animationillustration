@@ -8,9 +8,9 @@ const TrackRecord = () => {
         {/* Row 1: Heading and Description */}
         <div className="row">
           <div className="col-12">
-            <h2 className="trackrecord-heading">Our Flawless Track Record</h2>
+            <h2 className="trackrecord-heading">A Proven Track Record of Excellence </h2>
             <p className="trackrecord-description">
-              Enjoy peace of mind with our proven track record in animation production, featuring hundreds of successful projects, satisfied clients, and industry-leading turnaround times.
+            Having years of experience in the animation sector, we have been successful in delivering hundreds of animation projects to clients from varied industries. Quality, innovation, and client satisfaction have earned the company a reputation as a leading animation studio.
             </p>
           </div>
         </div>

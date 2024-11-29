@@ -8,8 +8,9 @@ import About from './pages/AboutUs';
 import ServicesPage from './pages/Services';
 import OurProcess from './pages/OurProcess';
 import Contactus from './pages/ContactUs';
-
-
+import TermsConditions from './pages/Termscondition';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import ThankYou from './pages/Thankyou';
 
 const App = () => {
     return (
@@ -20,6 +21,9 @@ const App = () => {
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/our-process" element={<OurProcess />} />
                 <Route path="/contact-us" element={<Contactus />} />
+                <Route path="/terms-conditions" element={<TermsConditions />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/thank-you" element={<ThankYou />} />
               
             </Routes>
         </Router>

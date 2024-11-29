@@ -19,23 +19,21 @@ const CommitmentClient = () => {
         <div className="row ">
           {/* Left Column */}
           <div className="col-lg-6 col-md-12 commitmentclient-left mb-4">
-            <h2 className="commitmentclient-heading">Commitment To Our Clients</h2>
+            <h2 className="commitmentclient-heading">Why Choose Our Video Production Services</h2>
             <p className="commitmentclient-description">
-              At Prolific Studios, we are dedicated to providing exceptional logo animation services
-              that exceed your expectations. Our commitment to our clients is reflected in the
-              following key areas:
+            When you put your faith in our video production services, you are actually putting it into a team of professional storytellers who know how to grab your audience within seconds.
             </p>
             <div className="row">
               <div className="col-md-6 mb-4">
                 <div className="icon-box">
                   <img
                     src={whyservice1}
-                    alt="100% Satisfaction Guaranteed"
+                    alt="Improve Branding"
                     className="icon-box-image"
                   />
-                  <h5 className="icon-box-title">100% Satisfaction Guaranteed</h5>
+                  <h5 className="icon-box-title">Improve Branding</h5>
                   <p className="icon-box-text">
-                    We are confident in the quality of our work and offer a 100% satisfaction guarantee.
+                  A good brand identity is the most important foundation on which the success of a business stands. Our video production service elevates your brand by creating wonderful visual storytelling that captures your target audience.
                   </p>
                 </div>
               </div>
@@ -43,12 +41,12 @@ const CommitmentClient = () => {
                 <div className="icon-box">
                   <img
                     src={whyservice2}
-                    alt="Personalized Attention"
+                    alt="Increase Engagement:"
                     className="icon-box-image"
                   />
-                  <h5 className="icon-box-title">Personalized Attention</h5>
+                  <h5 className="icon-box-title">Increase Engagement:</h5>
                   <p className="icon-box-text">
-                    Every project receives personalized attention from our experienced team.
+                  Video content is an impeccable mode of engagement for your audience. The video production services reproduce compelling videos for greater social media engagement, website traffic, and conversions.
                   </p>
                 </div>
               </div>
@@ -56,12 +54,12 @@ const CommitmentClient = () => {
                 <div className="icon-box">
                   <img
                     src={whyservice3}
-                    alt="Quality Assurance"
+                    alt="Communicate Messaging"
                     className="icon-box-image"
                   />
-                  <h5 className="icon-box-title">Quality Assurance</h5>
+                  <h5 className="icon-box-title">Communicate Messaging</h5>
                   <p className="icon-box-text">
-                    We adhere to strict quality standards to deliver animations that are visually stunning.
+                  One of the many facets of being the best explainer video production agency is having such wonderful and captivating videos to create social media engagement with higher website visitors and increase conversions. Spend money on professional video production and bring your brand to new heights as it fulfills the marketing mission.
                   </p>
                 </div>
               </div>
@@ -69,12 +67,12 @@ const CommitmentClient = () => {
                 <div className="icon-box">
                   <img
                     src={whyservice4}
-                    alt="Timely Delivery"
+                    alt="Guaranteed Quality & Delivery"
                     className="icon-box-image"
                   />
-                  <h5 className="icon-box-title">Timely Delivery</h5>
+                  <h5 className="icon-box-title">Guaranteed Quality & Delivery</h5>
                   <p className="icon-box-text">
-                    We understand the importance of deadlines and work hard to meet them.
+                  There is always a delivery of high quality with top-notch animation, with deadlines attested to improved professionalism. Our experienced team focuses on operational efficiency along with precision to ensure your project is delivered exactly as it was originally intended.
                   </p>
                 </div>
               </div>

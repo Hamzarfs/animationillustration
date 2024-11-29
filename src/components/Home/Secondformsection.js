@@ -68,9 +68,12 @@ const SecondFormSec = () => {
       <div className="row align-items-center">
         {/* Left Column */}
         <div className="col-lg-6 col-md-12">
-          <h2 className="secondformsec-heading">Animation Production Company</h2>
+          <h2 className="secondformsec-heading">Animation Video Production Company in the USA</h2>
           <p className="secondformsec-description">
-            Prolific animation studio is an LA – based animation production company offering modern and visually striking 2D/3D animated videos and logo animations. Our comprehensive list of 2D/3D animation services includes popular services such as explainer videos, game animations, game trailers cutscenes, logo animation, medical animation, cartoon animation, training videos, commercial animation, whiteboard animation, product modelling & animation, architectural rendering, live-action videos & more.
+          Animation Rush is the premier animation video production company in the USA. We are experts in creating videos that animate your ideas. Our animation experts and storytellers design high-quality 2D and 3D animations fitting your requirements, from explainer videos to real advertising spots. We offer all kinds of video production services to connect with your customers. 
+            <br></br><br></br>
+
+          At Animation Rush, we understand how animation can help you visually and engagingly compile huge amounts of data into small, digestible messages. Our professional video production services include character-based animation, motion graphics, and whiteboard animation, among many others. Animation specialists working with our clients come up with unique styles that suit the clients' branding while considering their target audiences. Let us help you enhance your brand through innovative animation.
           </p>
           <div className="secondformsec-images d-flex gap-3">
             <a href="https://trustpilot.com" target="_blank" rel="noopener noreferrer">

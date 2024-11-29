@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
             {/* Right Column */}
             <div className="col-6 text-end">
-              <a href="/terms-condition" className="text-light text-decoration-none">Terms & conditions</a> |   
+              <a href="/terms-conditions" className="text-light text-decoration-none">Terms & conditions</a> |   
               <a href="/privacy-policy" className="text-light text-decoration-none"> Privacy Policy</a>
             
             </div>

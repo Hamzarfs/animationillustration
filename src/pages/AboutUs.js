@@ -19,14 +19,11 @@ import appvalues4 from '../images/Appvalues4.png';
 
 const About = () => {
 
-
-    
     const customserviceheading = {
 
         customservicetitle: "Custom Service",
         customservicehighlight: "Logo Animation",
         customservicetitle2: " Services"
-
 
     };
     const customservicedescription = "Our team of highly qualified and creative animators excel in producing meticulously crafted logo animations. After studying your brand, we produce creative animated logos to tell your brand story and make it memorable.";

@@ -5,16 +5,16 @@ import Header from '../components/common/header';
 import '../App.css'
 import BannerSection from '../components/common/banner';
 import bannerImage from '../images/IllustrationBanner.webp';
-import whyservice1 from '../images/whyservice1.png';
-import whyservice2 from '../images/whyservice2.png';
-import whyservice3 from '../images/whyservice3.png';
-import whyservice4 from '../images/whyservice4.png';
-import whyservice5 from '../images/whyservice5.png';
-import whyservice6 from '../images/whyservice6.png';
-import customserviceimage1 from '../images/customserviceimage1.png';
-import customserviceimage2 from '../images/customserviceimage2.png';
-import customserviceimage3 from '../images/customserviceimage3.png';
-import customserviceimage4 from '../images/customserviceimage4.png';
+import whyservice1 from '../images/whyservice1.gif';
+import whyservice2 from '../images/whyservice2.gif';
+import whyservice3 from '../images/whyservice3.gif';
+import whyservice4 from '../images/whyservice4.gif';
+import whyservice5 from '../images/whyservice5.gif';
+import whyservice6 from '../images/whyservice6.gif';
+import customserviceimage1 from '../images/customservice1.gif';
+import customserviceimage2 from '../images/customservice2.gif';
+import customserviceimage3 from '../images/customservice3.gif';
+import customserviceimage4 from '../images/customservice4.png';
 import faqimg from '../images/faqimg.gif';
 import imageanimation from '../images/portfolio3.gif';
 import Banner from '../components/common/banner';
@@ -36,124 +36,120 @@ const Home = () => {
 
     const customserviceheading = {
 
-        customservicetitle: "Custom Service",
-        customservicehighlight: "Logo Animation",
+        customservicetitle: "Our Professional ",
+        customservicehighlight: "Video Production",
         customservicetitle2: " Services"
 
 
     };
-    const customservicedescription = "Our team of highly qualified and creative animators excel in producing meticulously crafted logo animations. After studying your brand, we produce creative animated logos to tell your brand story and make it memorable.";
+    const customservicedescription = "As a premium video production company, we offer a wide range of services, including";
     const customservicesteps = [
         {
-            customserviceimage: customserviceimage1,
-            alt: "Improve Branding",
-            customservicetitle: "Improve Branding",
-            customservicedescription: "Our expert animators will bring yourstatic logo to life, creating a dynamic and memorable visual identity that leaves a lasting impression."
-        },
+        customserviceimage: customserviceimage1,
+        alt: "Logo Animation",
+        customservicetitle: "Logo Animation",
+        customservicedescription: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy. "
+      },
         {
             customserviceimage: customserviceimage2,
-            alt: "Increase Engagement",
-            customservicetitle: "Increase Engagement",
-            customservicedescription: "Animated logos are more attention- grabbing and engaging, increasing brand recognition and driving customer interaction."
+            alt: "2D Animation",
+            customservicetitle: "2D Animation",
+            customservicedescription: "Translate your imagination into amazing 2D animations. Character animations and background designs are crafted for you by expert artists, providing you with rich visual and engaging content."
         },
         {
             customserviceimage: customserviceimage3,
-            alt: "Communicate Messaging",
-            customservicetitle: "Communicate Messaging",
-            customservicedescription: "We work closely with you to understand your brand's unique narrative, ensuring that your logo animation aligns perfectly with your brand's values and message."
+            alt: "3D Animation",
+            customservicetitle: "3D Animation",
+            customservicedescription: "Bring lifelike 3D animations that enthrall your audience. From product visualization to cinematic sequences, our expert team does everything."
         },
         {
             customserviceimage: customserviceimage4,
-            alt: "Multi-Platform Use",
-            customservicetitle: "Multi-Platform Use",
-            customservicedescription: "Our animations are designed to grab attention on various digital platforms, from websites to social media and more."
+            alt: "Explainer Video",
+            customservicetitle: "Explainer Video",
+            customservicedescription: "Make your cumbersome concepts easy with our great explainer videos using simple and easy-to-understand visuals with short stories to clarify and educate your audience."
         }
+  
     ];
     const heading = {
-
         title: (
-            <>
-                Why Choose Our
+            <>   
+            Industries We Excel In  
             </>
-
         ),
-
-        highlight: "Logo Animation",
-        title2: " Services"
-
-
+        // highlight:"Animation Video",
+        // title2: "Production Company in the USA"
     };
     const description = "Our team of highly qualified and creative animators excel in producing meticulously crafted logo animations. After studying your brand, we produce creative animated logos to tell your brand story and make it memorable.";
     const steps = [
         {
             image: whyservice1,
-            alt: "Improve Branding",
-            title: "Improve Branding",
-            description: "Our expert animators will bring yourstatic logo to life, creating a dynamic and memorable visual identity that leaves a lasting impression."
+            alt: "Entertainment",
+            title: "Entertainment",
+            description: "Our animation studio specializes in creating outstanding visual effects, character animations, and motion graphics in film and television. We produce interactive gaming experiences with 3D and other animation options."
         },
         {
             image: whyservice2,
-            alt: "Increase Engagement",
-            title: "Increase Engagement",
-            description: "Animated logos are more attention- grabbing and engaging, increasing brand recognition and driving customer interaction."
+            alt: "Commercial",
+            title: "Commercial",
+            description: "Our studio is engaged in the production of captivating commercials, explainer videos, or corporate videos that help brands and businesses communicate well."
         },
         {
             image: whyservice3,
-            alt: "Communicate Messaging",
-            title: "Communicate Messaging",
-            description: "We work closely with you to understand your brand's unique narrative, ensuring that your logo animation aligns perfectly with your brand's values and message."
+            alt: "Nonprofit",
+            title: "Nonprofit",
+            description: "We create powerful animations to amplify the voices of nonprofits and social causes. Using very strong imagery and engaging storytelling, we create videos that succeed in grabbing audience attention."
         },
         {
             image: whyservice4,
-            alt: "Multi-Platform Use",
-            title: "Multi-Platform Use",
-            description: "Our animations are designed to grab attention on various digital platforms, from websites to social media and more."
+            alt: "Healthcare",
+            title: "Healthcare",
+            description: "The studio helps create clear and informative medical animations to educate healthcare professional and patients, in addition to developing interactive animations around pharmaceutical concepts."
         },
         {
             image: whyservice5,
-            alt: "Guaranteed Quality & Delivery",
-            title: "Guaranteed Quality &Delivery",
-            description: "With our experienced team and state-of-the-art technology, we deliverhigh-quality logo animations on time and within budget."
+            alt: "Educational",
+            title: "Educational",
+            description: "In creating e-learning materials, we specialize in interactive animations and simulations that animate difficult subjects, thus appealing to their visual sense. "
         },
         {
             image: whyservice6,
-            alt: "Creative Logo Animation",
-            title: "Creative Logo Animation",
-            description: "We pay attention to every detail,ensuring that your logo animation is a reflection of your brand's personalityand style."
+            alt: "Sports",
+            title: "Sports",
+            description: "The studio creates vibrant graphics and animations for sports broadcasts as well as interesting videos promoting sports events and athletes."
         }
     ];
 
 
     const faqs = [
-        {
-            question: "Can Logo Animation Help Boost My Brand Identity?",
-            answer: "Yes, logo animation can..."
-        },
-        {
-            question: "What is the average cost of a logo animation?",
-            answer: "The average cost varies..."
-        }
-        ,
-        {
-            question: "Who will own the right to my logo animation?",
-            answer: "You will retain full rights..."
-        },
-        {
-            question: "How long does it take to create an animated logo?",
-            answer: "It usually takes..."
-        },
-        {
-            question: "Can I request a revision?",
-            answer: "Yes, revisions are allowed lorem..ffer high-quality custom logo animation services for businesses of all sizes. Our team specializes in helping organizations create impactful animated logffer high-quality custom logo animation services for businesses of all sizes. Our team specializes in helping organizations create impactful animated logffer high-quality custom logo animation services for businesses of all sizes. Our team specializes in helping organizations create impactful animated logffer high-quality custom logo animation services for businesses of all sizes. Our team specializes in helping organizations create impactful animated logffer high-quality custom logo animation services for businesses of all sizes. Our team specializes in helping organizations create impactful animated log."
-        }
+      {
+        question: "What is the process of producing a video?",
+        answer: "Our video production process consists of a few steps: consulting, pre-production, production, post-production, and devising."
+      },
+      {
+        question: "How long should my video be?",
+        answer: "The ideal length of your video depends on your purpose and intended audience. Shorter videos are preferred for social media, while longer videos develop organically over time with the material's theme."
+      },
+      {
+        question: "What is the cost of an explainer video?",
+        answer: "The cost of creating an explainer video depends on the duration, complexity, type of animation applied, and total time spent on it."
+      },
+      {
+        question: "So how many rounds of revisions do I get?",
+        answer: "Every package includes different rounds of revisions. However, our company strives to provide you with a completely satisfying product."
+      },
+      {
+        question: "Why consider Animation Rush as your video animation company?",
+        answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
+      }
     ];
+    
     return (
         <div>
             <Header />
             <Banner
-                subheading="Best Illustration Services"
-                heroTitle="Share Your Brand's Story With Memorable Animated Illustrations"
-                description="We offer high-quality custom logo animation services for businesses of all sizes. Our team specializes in helping organizations create impactful animated logos for their startups."
+                subheading="Bringing Your Ideas to Life with Expertise and Creativity"
+                heroTitle="Professional Video Production Company Your Vision, Our Expertise"
+                description="As a creative video production company, we shape bright and beautiful developing videos. Our team of exemplary professionals will bring your ideas from concept to completion. Whether commercial, explanatory, or brand-film cinematic, we got it for you."
                 buttonText="Contact Us Today!"
                 buttonLink="/contact" // Replace with your actual link
                 backgroundImage={bannerImage} // Provide the background image URL
@@ -168,13 +164,14 @@ const Home = () => {
             <CtaSection />
             <ImageRightBanner
                 // subHeading="ABOUT US"
-                heading="What Makes Our"
-                headinglightblue=" Animations"
-                heading2=" Unique"
-
+                heading="What Sets Us Apart"
+                // headinglightblue=" Animations"
+                // heading2=" Unique"
                 description={
                     <>
-                        Let creativity meet strategy! We turn your online vision into reality! With a focus on innovative strategies and cutting-edge technologies, our passionate team is committed to driving results and ensuring your success in the ever-evolving digital landscape.
+                        We are a top creative video production company that believes in combining traditional innovative storytelling with the latest technology. The experience has made our staff realize that the client's vision should always come first above anything. We create masterpieces or tell wonderful stories while still using the newest tools and techniques by achieving moving pictures that will literally go beyond your viewers. 
+ <br></br> <br></br>
+Including optimization and maximizing reach is what our videos can do for your audience. Designing brand new types of engaging media, audio, and creative content for social media sites, websites, email marketing, and digital advertising will connect you with your audience and produce results.
 
                     </>
                 }

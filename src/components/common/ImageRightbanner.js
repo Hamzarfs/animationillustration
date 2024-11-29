@@ -11,9 +11,9 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
                         <h2 className="sub-heading">{subHeading}</h2>
                         <h2 className="about-heading">{heading}<span className="lightblue-h2">{headinglightblue}</span>{heading2}</h2>
                         <p className="design-process-description">{description}</p>
-                        <div>
+                        {/* <div>
                             <button className="header-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Right Column: Image or Text based on reverseOrder */}

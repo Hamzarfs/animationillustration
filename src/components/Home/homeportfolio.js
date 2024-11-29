@@ -28,9 +28,9 @@ const PortfolioGallery = () => {
             <div className="container-xxl" id="portfolio">
                 <div className="container py-5 px-lg-5">
                     <div className="text-center mb-4">
-                        <h5 className="text-primary-gradient fw-medium">Portfolio</h5>
+                        {/* <h5 className="text-primary-gradient fw-medium">Portfolio</h5> */}
                         <h2 className="portfolio-heading">
-                            Our Amazing <span className="lightblue-h2">Animations</span> Work!
+                        Our  <span className="lightblue-h2">Animated</span> Portfolio!
                         </h2>
                     </div>
 
