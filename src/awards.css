@@ -1,4 +1,8 @@
 /* AwardsLogo Section */
+
+.choose-service-icon-box img {
+    width: 71px;
+}
 .awards-logo-section {
     padding: 5rem 0;
     background: #E5FBFC;
