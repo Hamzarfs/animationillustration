@@ -92,7 +92,8 @@ const ServicesPage = () => {
 
             <Header />
 
-            <HeroSection {...heroSection} />
+            <HeroSection 
+            {...heroSection} />
 
             <section className="services-we-deliver py-5 position-relative">
                 <div className="container">

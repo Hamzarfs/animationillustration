@@ -82,7 +82,7 @@ const SecondFormSec = () => {
 
                             At Animation Rush, we understand how animation can help you visually and engagingly compile huge amounts of data into small, digestible messages. Our professional video production services include character-based animation, motion graphics, and whiteboard animation, among many others. Animation specialists working with our clients come up with unique styles that suit the clients' branding while considering their target audiences. Let us help you enhance your brand through innovative animation.
                         </p>
-                        <div className="secondformsec-images d-flex gap-3">
+                        <div className="secondformsec-images mb-3 d-flex gap-3">
                             <a href="https://trustpilot.com" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={trust}

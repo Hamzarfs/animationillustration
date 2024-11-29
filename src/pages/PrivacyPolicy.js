@@ -13,37 +13,164 @@ const PrivacyPolicy = () => {
                 <link rel="canonical" href="https://animationrush.com/privacy-policy" />
             </Helmet>
             <Header />
-            <div className="container simple-section">
-                <div className="row ">
-                    <div className="col-lg-12 mt-5 custom-content-v3 mb-4 " style={{ textAlign: 'justify' }}>
-                        <h1 className='align-items-center justify-content-center text-center'>Privacy Policy</h1>
-                        <p style={{ textAlign: 'justify' }}>
-                            At AMZ Book Publishing, we respect your privacy and are committed to safeguarding the personal information you provide when using our website. This policy outlines how we collect, use, and protect your information.
-                        </p>
-                        <p><strong>Information Collection</strong></p>
-                        <p>We collect information from you when you register on our site, place an order, subscribe to our newsletter, or complete a form. The personal information we may ask you to provide includes your name, email address, mailing address, phone number, and credit card details. However, you are free to visit our site anonymously if you prefer.</p>
-                        <p><strong>Use of Collected Information</strong></p>
-                        <p>The information we collect may be used for the following purposes:</p>
-                        <ul>
-                            <li><strong>Personalizing your experience:</strong> We use your information to better understand your individual needs and tailor our services accordingly.</li>
-                            <li><strong>Improving our website:</strong> Feedback and information from users help us enhance our website and offerings.</li>
-                            <li><strong>Enhancing customer service:</strong> Your information allows us to respond more effectively to customer service requests and support needs.</li>
-                            <li><strong>Processing transactions:</strong> We ensure that your information, whether public or private, will not be sold, exchanged, transferred, or provided to any other company for any reason, except as necessary to fulfill your order or provide the requested services.</li>
-                            <li><strong>Sending periodic emails:</strong> We may use your email address to send you information, respond to inquiries, and address any requests or questions.</li>
-                        </ul>
-                        <p><strong>Information Protection</strong></p>
-                        <p>We implement a range of security measures to protect your personal information during the ordering, submission, and access processes. Our secure servers utilize Secure Socket Layer (SSL) technology to encrypt sensitive data, such as credit card information, which is then securely processed by our payment gateway providers. Only authorized personnel with special access rights can view this information, and they are required to maintain confidentiality. After a transaction, we do not store any private information (e.g., credit card numbers, Social Security numbers, or financial details) on our servers.</p>
-                        <p><strong>Cookies</strong></p>
-                        <p>Yes, we use cookies. Cookies are small files transferred to your computer’s hard drive via your web browser (if allowed) that help websites recognize your browser and capture specific information. We use cookies to track advertisements and compile aggregate data about site traffic and user interactions to improve our site and tools. We may also engage third-party service providers to assist in analyzing visitor behavior, but these providers are only permitted to use the collected information to help us improve our business.</p>
-                        <p><strong>Information Disclosure</strong></p>
-                        <p>We do not sell, trade, or transfer your personally identifiable information to external parties. This excludes trusted third parties who assist us in operating our website, conducting business, or providing services to you, as long as they agree to keep your information confidential. We may also disclose information if it is necessary to comply with legal requirements, enforce our policies, or protect the rights, property, or safety of ourselves or others. Non-personally identifiable visitor information may be shared for marketing, advertising, or other purposes.</p>
-                        <p><strong>Third-Party Links</strong></p>
-                        <p>Occasionally, we may offer third-party products or services on our website. These third-party sites have independent privacy policies, and we are not responsible for their content or activities. However, we welcome feedback regarding these sites to help maintain the integrity of our platform.</p>
-                        <p><strong>Online Privacy Policy Scope</strong></p>
-                        <p>This privacy policy applies solely to information collected through our website and does not cover information collected offline.</p>
-                    </div>
-                </div>
-            </div>
+            <div className="container py-5">
+      <h1 className="text-center mb-4">Privacy Policy</h1>
+
+      <div className="content">
+        <h5>Introduction</h5>
+        <p>
+          The site www.animationrush.com (the “Site”) and the other features, apps, services, and technologies we offer and services available in connection with the Site (the “Services”) are made available to you (also referred to as “User” or “you”) by Virtual Reality Creators Corp. d/b/a Animation Rush (“Company,” “we,” “our,” “us,” as the context requires).
+        </p>
+        <p>
+          This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+        </p>
+        <p>
+          We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms of service.
+        </p>
+
+        <h5>Definitions</h5>
+        <p>
+          Capitalized terms used in this Privacy Policy and not so defined, shall have the following meanings:
+        </p>
+        <ul>
+          <li><strong>Personal Data</strong> means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).</li>
+          <li><strong>Usage Data</strong> means data collected automatically either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
+          <li><strong>Cookies</strong> are small pieces of data stored on your device (computer or mobile device).</li>
+          <li><strong>Data Controller</strong> means the natural or legal person who (either alone or jointly or in common with other persons) determines the purposes for which and the manner in which any personal information are, or are to be, processed. For the purpose of this Privacy Policy, we are a Data Controller of your Personal Data.</li>
+          <li><strong>Data Processors</strong> (or “Service Providers”) means any natural or legal person who processes the data on behalf of the Data Controller. We may use the services of various Service Providers in order to process your data more effectively.</li>
+          <li><strong>Data Subject</strong> (or “User”) means any living individual who is using our Service and is the subject of Personal Data.</li>
+        </ul>
+
+        <h5>Types of Data Collected</h5>
+        <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+
+        <h5>Personal Data</h5>
+        <p>
+          To provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to: first name, last name, gender, date of birth, country, email address, ZIP/Postal code, Cookies, and Usage Data.
+        </p>
+        <p>
+          No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+        </p>
+        <p>
+          You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or instructions provided in any email we send or by contacting us.
+        </p>
+        <p>
+          Failure to provide certain Personal Data may make it impossible for us to provide Services.
+        </p>
+
+        <h5>Usage Data</h5>
+        <p>
+          We may also collect Usage Data that your browser sends whenever you visit our Service or when you access the Service by or through a computer or mobile device. This Usage Data may include information such as your computer’s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.
+        </p>
+        <p>
+          When you access the Service by or through a mobile device, this Usage Data may include information such as the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers, and other diagnostic data.
+        </p>
+
+        <h5>Location Data</h5>
+        <p>
+          We may use and store information about your location if you give us permission to do so (“Location Data”). We use this data to provide features of our Service, to improve and customize our Service. You can enable or disable location services when you use our Service at any time, through your device settings.
+        </p>
+
+        <h5>Tracking Cookies Data</h5>
+        <p>
+          We use Cookies and similar tracking technologies to track the activity on our Service and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.
+        </p>
+        <p>
+          You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
+        </p>
+        <h5>Examples of Cookies we use:</h5>
+        <ul>
+          <li><strong>Session Cookies</strong> — We use Session Cookies to operate our Service.</li>
+          <li><strong>Preference Cookies</strong> — We use Preference Cookies to remember your preferences and various settings.</li>
+          <li><strong>Security Cookies</strong> — We use Security Cookies for security purposes.</li>
+          <li><strong>Advertising Cookies</strong> — Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.</li>
+        </ul>
+
+        <h5>Mode And Place Of Processing The Data</h5>
+        <h5>Methods Of Processing</h5>
+        <p>The Data Controller processes the Data of Users in a proper manner and shall take appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.</p>
+        <p>The Data processing is carried out using computers and/or IT-enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Data Controller, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of the site (administration, sales, marketing, legal, system administration) or external parties (such as third party technical service providers, mail carriers, hosting providers, IT companies, website developers, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Data Controller at any time.</p>
+
+        <h5>Place</h5>
+        <p>The Data is processed at the Data Controller’s operating offices and in any other places where the parties involved in the processing are located. For further information, please contact the Data Controller.</p>
+
+        <h5>Retention time</h5>
+        <p>The Data is kept for the time necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies. Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.</p>
+
+        <h5>The use of the collected Data</h5>
+        <p>Company uses the collected data for various purposes:</p>
+        <ul>
+          <li><strong>To provide and maintain the Services</strong> — We connect information about your activities on our different Services and on devices to provide a more tailored and consistent experience on all Services you use, wherever you use them. We can also make your experience more seamless, for example, by automatically filling in your registration information from one Service when you sign up for an account on a different Service;</li>
+          <li><strong>To notify you about changes to the Services;</strong></li>
+          <li><strong>To provide customer support;</strong></li>
+          <li><strong>To gather analysis or valuable information so that we can improve our Service</strong> — We use the information we have to develop, test and improve our Services, including by conducting surveys and research, and testing and troubleshooting new products and features;</li>
+          <li><strong>To monitor the usage of the Services;</strong></li>
+          <li><strong>To detect, prevent and address technical issues;</strong></li>
+          <li>To provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information;</li>
+        </ul>
+
+        <h5>Legal Basis for Processing Personal Data Under General Data Protection Regulation (“GDPR”) and Other Data Protection Laws</h5>
+        <p>Company legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.</p>
+        <p>Company may process your Personal Data because:</p>
+        <ul>
+          <li>We need to perform a contract with you;</li>
+          <li>You have given us permission to do so;</li>
+          <li>The processing is in our legitimate interests and it’s not overridden by your rights;</li>
+          <li>To comply with the law.</li>
+        </ul>
+
+        <h5>Transfer Of Data</h5>
+        <p>Your information, including Personal Data, may be transferred to, and maintained on, computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction. We share information globally internally within our companies. If you are located outside United States and choose to provide information to us, please note that we transfer the data, including Personal Data, to United States and process it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer. Company will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
+
+        <h5>Disclosure Of Data</h5>
+        <h5>Business Merger</h5>
+        <p>If Company is involved in a merger, acquisition, consolidation or asset sale, or is (or parts of Company is) otherwise transferred by operation of law or otherwise, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+
+        <h5>Disclosure for Law Enforcement</h5>
+        <p>Under certain circumstances, Company may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+
+        <h5>Legal Requirements</h5>
+        <p>Company may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+        <ul>
+          <li>To comply with a legal obligation;</li>
+          <li>To protect and defend the rights or property of Company;</li>
+          <li>To prevent or investigate possible wrongdoing in connection with the Service;</li>
+          <li>To protect the personal safety of users of the Service or the public;</li>
+          <li>To protect against legal liability.</li>
+        </ul>
+
+        <h5>The rights of Users Regarding Their Data</h5>
+        <p>In addition to your rights under applicable data protection legislation, Users have the right, at any time, to know whether their Personal Data has been stored and can contact us to learn about their contents and origin, to verify their accuracy or to ask for them to be supplemented, cancelled, updated or corrected, or for their transformation into anonymous format or to block any data held in violation of the law, as well as to oppose their treatment for any and all legitimate reasons. Requests should be sent to the “Contact Us” information set out below.</p>
+
+        <h5>Security Of Data</h5>
+        <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+        <h5>“Do Not Track” Signals</h5>
+        <p>We do not support “Do Not Track.” Do Not Track is a preference you can set in your web browser to inform websites that you do not want to be tracked. You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web browser.</p>
+
+        <h5>Your Data Protection Rights Under GDPR and Other Privacy Laws</h5>
+        <p>If you are a resident of the EEA or other locations, you have certain data protection rights. Company aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
+        <p>In certain circumstances, you have the following data protection rights:</p>
+        <ul>
+          <li>The right to access, update or to delete the information we have on you.</li>
+          <li>The right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete.</li>
+          <li>The right to object. You have the right to object to our processing of your Personal Data.</li>
+          <li>The right of restriction. You have the right to request that we restrict the processing of your personal information.</li>
+          <li>The right to data portability. You have the right to be provided with a copy of the information we have on you in a structured, machine-readable, and commonly used format.</li>
+          <li>The right to withdraw consent. You also have the right to withdraw your consent at any time where Company relied on your consent to process your personal information.</li>
+        </ul>
+
+        <h5>Changes to This Privacy Policy</h5>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+        <h5>Contact Us</h5>
+        <p>If you have any questions about this Privacy Policy, please contact us by:</p>
+        <ul>
+          <li>By email: <a href="mailto:info@animationrush.com">info@animationrush.com</a></li>
+          
+        </ul>
+      </div>
+    </div>
 
             <Footer />
         </div>

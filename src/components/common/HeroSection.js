@@ -10,7 +10,7 @@ const HeroSection = ({ image, title, subtitle }) => {
                 <div>
                     <h1 className="display-4 fw-semibold">{title}</h1>
                     <p className="lead mx-auto">{subtitle}</p>
-                    <a href="#" className="btn custom-btn">Discover More</a>
+                    <a href="#" className="btn custom-btn">Get Started</a>
                 </div>
             </div>
         </section>

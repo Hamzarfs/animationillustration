@@ -23,7 +23,7 @@ const CustomServices = ({
     {customservicesteps.slice(0, 4).map((step, index) => (
       <div className="col-lg-3 col-md-6 mb-3" key={index}>
         <div className="choose-service-icon-box text-center">
-          <img src={step.customserviceimage} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
+          <img src={step.customserviceimage} alt={step.alt} className="img-fluid mb-3 about-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.customservicetitle}</h5>
           <p className="choose-service-icon-text">{step.customservicedescription}</p>
         </div>

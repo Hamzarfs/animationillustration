@@ -157,7 +157,7 @@ const Home = () => {
                 subheading="Bringing Your Ideas to Life with Expertise and Creativity"
                 heroTitle="Professional Video Production Company Your Vision, Our Expertise"
                 description="As a creative video production company, we shape bright and beautiful developing videos. Our team of exemplary professionals will bring your ideas from concept to completion. Whether commercial, explanatory, or brand-film cinematic, we got it for you."
-                buttonText="Contact Us Today!"
+                buttonText="Get Started"
                 buttonLink="/contact" // Replace with your actual link
                 backgroundImage={bannerImage} // Provide the background image URL
             />

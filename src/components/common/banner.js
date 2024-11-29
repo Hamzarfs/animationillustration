@@ -29,7 +29,7 @@ const Banner = ({ subheading, heroTitle, description, buttonText, buttonLink, ba
                                 <p className="banner-description">{description}</p>
                                 <a
                                     href={buttonLink}
-                                    className="banner-cta-button animate__animated animate__pulse animate__infinite"
+                                    className="banner-cta-button "
                                 >
                                     {buttonText}
                                 </a>

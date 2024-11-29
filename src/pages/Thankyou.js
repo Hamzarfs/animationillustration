@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../Thankyou.css'
 import Header from '../components/common/header';
 import Footer from '../components/common/footer';
-import ContactUsform from '../components/Contactus/contactus';
-import StepSection from '../components/common/Steps';
 import { Helmet } from 'react-helmet-async';
 
 const ThankYou = () => {
@@ -29,7 +28,7 @@ const ThankYou = () => {
                 <p>
                     Having trouble? <a href="tel:+02045112054">Contact us</a>
                 </p>
-                <a className="btn" href="/home">
+                <a className="banner-cta-button" href="/">
                     Back to homepage
                 </a>
             </div>

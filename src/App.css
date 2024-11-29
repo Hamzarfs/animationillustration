@@ -89,6 +89,9 @@
 img.animatedlogo {
   width: 151px;
 }
+
+
+
 /* Hover effect on nav links */
 #header .nav-link:hover {
   color: #215E89; /* Change to pinkish color on hover */
@@ -204,3 +207,15 @@ img.animatedlogo {
   color: #dbe1ff;
 }
 /* End Footer Styles */
+
+
+button.header-btn {
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  button.header-btn {
+    margin-left: 0px;
+  }
+
+}
