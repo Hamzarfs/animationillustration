@@ -68,11 +68,11 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink
-                                    to="/designing"
+                                    to="/our-process"
                                     className="nav-link"
                                 // activeClassName="active-link"
                                 >
-                                    Designing
+                                    Our Process
                                 </NavLink>
                             </li>
                             <li className="nav-item">

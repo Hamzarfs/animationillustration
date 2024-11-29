@@ -1,0 +1,104 @@
+/* General Section Styling */
+.imagelefttab-section {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .imagelefttab-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 510px;
+}
+  
+  .imagelefttab-heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .imagelefttab-heading span {
+    color: #215E89;
+  }
+  
+  .imagelefttab-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Tabs Styling */
+  .imagelefttab-tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .imagelefttab-tab {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .imagelefttab-tab h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .imagelefttab-tab .icon {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .imagelefttab-tab:hover {
+    border-bottom: 2px solid #215E89;
+  }
+  
+  .imagelefttab-tab.active {
+    border-bottom: 2px solid #215E89;
+    color: #215E89;
+  }
+  
+  .imagelefttab-tab.active h3,
+  .imagelefttab-tab.active .icon {
+    color: #215E89;
+  }
+  
+  /* Tab Content */
+  .imagelefttab-content {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+
+    .page-hading {
+      height: 400px !important;
+    }
+    #header .nav-link.active:before {
+      width: 100%;
+      width: 150px !important;
+  }
+    .imagelefttab-heading {
+      font-size: 1.5rem;
+    }
+  
+    .imagelefttab-tabs {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .imagelefttab-tab {
+      justify-content: start;
+    }
+  
+    .imagelefttab-tab h3 {
+      font-size: 0.9rem;
+    }
+  }
