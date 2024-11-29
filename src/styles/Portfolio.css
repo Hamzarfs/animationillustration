@@ -1,0 +1,21 @@
+.portfolio-page .logo-grid-section h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.portfolio-page .logo-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-page .logo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-page .logo-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}

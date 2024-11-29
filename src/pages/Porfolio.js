@@ -1,13 +1,13 @@
-import React from 'react';
-import Header from '../components/common/header';
-import Footer from '../components/common/footer';
-import { Helmet } from 'react-helmet-async';
-import HeroSection from '../components/common/HeroSection';
+import CtaSection from "../components/common/ctasection"
+import FAQSection from "../components/common/faqsection"
+import Header from "../components/common/header"
+import HeroSection from "../components/common/HeroSection"
+import heroBgImg from '../images/services-banner.png'
+import faqbg from '../images/faqimg.gif'
+import LogoAnimationSection from "../components/common/LogoAnimationSection"
+import ContactUsSection from "../components/common/ContactUsSection"
+import Footer from "../components/common/footer"
 import '../styles/Portfolio.css'
-import ContactUsSection from '../components/common/ContactUsSection';
-import LogoAnimationSection from '../components/common/LogoAnimationSection';
-import FAQSection from '../components/common/faqsection';
-import CtaSection from '../components/common/ctasection';
 import portfolioImg1 from '../images/portfolio/portfolio-1.png'
 import portfolioImg2 from '../images/portfolio/portfolio-2.png'
 import portfolioImg3 from '../images/portfolio/portfolio-3.png'
@@ -25,11 +25,6 @@ import portfolioImg14 from '../images/portfolio/portfolio-14.png'
 import portfolioImg15 from '../images/portfolio/portfolio-15.png'
 import portfolioImg16 from '../images/portfolio/portfolio-16.png'
 import portfolioImg17 from '../images/portfolio/portfolio-17.png'
-import heroBgImg from '../images/services-banner.png'
-import faqbg from '../images/faqimg.gif'
-import { Box } from '@mui/material';
-import { Masonry } from '@mui/lab';
-
 
 
 const Portfolio = () => {
@@ -62,54 +57,46 @@ const Portfolio = () => {
         { image: portfolioImg3, alt: 'AG Machine Tech LTD' },
         { image: portfolioImg4, alt: 'Innovative Tint Solutions' },
         { image: portfolioImg5, alt: 'Bespoke Living Rooms' },
-        { image: portfolioImg6, alt: 'K&D Build Group LTD' },
-        { image: portfolioImg7, alt: 'The Higher Power Rangers' },
-        { image: portfolioImg8, alt: 'RP Dreams' },
-        { image: portfolioImg9, alt: 'AJC Plastering' },
-        { image: portfolioImg10, alt: 'Girl Power Electric' },
-        { image: portfolioImg11, alt: 'Pezzo Food Group' },
-        { image: portfolioImg12, alt: 'The Oxx House Fight Club' },
-        { image: portfolioImg13, alt: 'All UK Waste Solutions LTD' },
-        { image: portfolioImg14, alt: 'Kokein' },
-        { image: portfolioImg15, alt: 'Anas, Eliyas & I' },
-        { image: portfolioImg16, alt: 'Barratlantic LTD' },
-        { image: portfolioImg17, alt: 'Apex Auto Detailing' },
+        { image: portfolioImg6, alt: 'K&D Build Group ' },
+        { image: portfolioImg7, alt: '' },
+        { image: portfolioImg8, alt: '' },
+        { image: portfolioImg9, alt: '' },
+        { image: portfolioImg10, alt: '' },
+        { image: portfolioImg11, alt: '' },
+        { image: portfolioImg12, alt: '' },
+        { image: portfolioImg13, alt: '' },
+        { image: portfolioImg14, alt: '' },
+        { image: portfolioImg15, alt: '' },
+        { image: portfolioImg16, alt: '' },
+        { image: portfolioImg17, alt: '' },
     ];
+
     return (
         <section className="portfolio-page">
-            <Helmet>
-                <title>Our Portfolio: Stunning Video Animations That Inspire</title>
-                <meta name="description" content="Explore our portfolio of video animations. See how we bring ideas to life with creative visuals, engaging storytelling, and top-notch quality." />
-                <link rel="canonical" href="https://animationrush.com/portfolio" />
-            </Helmet>
-
             <Header />
 
             <HeroSection image={heroBgImg} title='Portfolio' subtitle='kimono photography Agency runs wide and deep. Across many markets, geographies typologies, our team members' />
 
+            {/* <section className="portfolio-section">
+                <div className="container">
+                    <h1 className="text-center">
+                        Our Animation Development Process
+                    </h1>
+                </div>
+            </section> */}
+
             <section className="logo-grid-section py-5">
                 <div className="container">
                     <h2 className="text-center mb-4">Our Animation Development Process</h2>
-                    <Box>
-                        <Masonry columns={3} spacing={2}>
-                            {logos.map((logo, index) => (
-                                <div key={index}>
-                                    <img
-                                        src={logo.image}
-                                        alt={logo.alt}
-                                        loading="lazy"
-                                        style={{
-                                            borderBottomLeftRadius: 4,
-                                            borderBottomRightRadius: 4,
-                                            display: 'block',
-                                            width: '100%',
-                                        }}
-                                        className='logo-card'
-                                    />
+                    <div className="row g-3">
+                        {logos.map((logo, index) => (
+                            <div className="col-6 col-md-3" key={index}>
+                                <div className="logo-card text-center">
+                                    <img src={logo.src} alt={logo.alt} className="img-fluid logo-image" />
                                 </div>
-                            ))}
-                        </Masonry>
-                    </Box>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -123,8 +110,9 @@ const Portfolio = () => {
 
             <Footer />
 
-        </section>
-    );
-};
 
-export default Portfolio;
+        </section>
+    )
+}
+
+export default Portfolio

@@ -47,11 +47,11 @@ const Home = () => {
     const customservicedescription = "As a premium video production company, we offer a wide range of services, including";
     const customservicesteps = [
         {
-        customserviceimage: customserviceimage1,
-        alt: "Logo Animation",
-        customservicetitle: "Logo Animation",
-        customservicedescription: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy. "
-      },
+            customserviceimage: customserviceimage1,
+            alt: "Logo Animation",
+            customservicetitle: "Logo Animation",
+            customservicedescription: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy. "
+        },
         {
             customserviceimage: customserviceimage2,
             alt: "2D Animation",
@@ -70,12 +70,12 @@ const Home = () => {
             customservicetitle: "Explainer Video",
             customservicedescription: "Make your cumbersome concepts easy with our great explainer videos using simple and easy-to-understand visuals with short stories to clarify and educate your audience."
         }
-  
+
     ];
     const heading = {
         title: (
-            <>   
-            Industries We Excel In  
+            <>
+                Industries We Excel In
             </>
         ),
         // highlight:"Animation Video",
@@ -119,46 +119,40 @@ const Home = () => {
             title: "Sports",
             description: "The studio creates vibrant graphics and animations for sports broadcasts as well as interesting videos promoting sports events and athletes."
         }
-    ];<Helmet>
-    <title>Video Production Company In USA | Animation Rush</title>
-    <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
-    <link rel="canonical" href="http://theappdesign.com" />
-</Helmet>
+    ];
 
 
     const faqs = [
-      {
-        question: "What is the process of producing a video?",
-        answer: "Our video production process consists of a few steps: consulting, pre-production, production, post-production, and devising."
-      },
-      {
-        question: "How long should my video be?",
-        answer: "The ideal length of your video depends on your purpose and intended audience. Shorter videos are preferred for social media, while longer videos develop organically over time with the material's theme."
-      },
-      {
-        question: "What is the cost of an explainer video?",
-        answer: "The cost of creating an explainer video depends on the duration, complexity, type of animation applied, and total time spent on it."
-      },
-      {
-        question: "So how many rounds of revisions do I get?",
-        answer: "Every package includes different rounds of revisions. However, our company strives to provide you with a completely satisfying product."
-      },
-      {
-        question: "Why consider Animation Rush as your video animation company?",
-        answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
-      }
+        {
+            question: "What is the process of producing a video?",
+            answer: "Our video production process consists of a few steps: consulting, pre-production, production, post-production, and devising."
+        },
+        {
+            question: "How long should my video be?",
+            answer: "The ideal length of your video depends on your purpose and intended audience. Shorter videos are preferred for social media, while longer videos develop organically over time with the material's theme."
+        },
+        {
+            question: "What is the cost of an explainer video?",
+            answer: "The cost of creating an explainer video depends on the duration, complexity, type of animation applied, and total time spent on it."
+        },
+        {
+            question: "So how many rounds of revisions do I get?",
+            answer: "Every package includes different rounds of revisions. However, our company strives to provide you with a completely satisfying product."
+        },
+        {
+            question: "Why consider Animation Rush as your video animation company?",
+            answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
+        }
     ];
-    
+
     return (
         <div>
-            <Header />
             <Helmet>
                 <title>Video Production Company In USA | Animation Rush</title>
                 <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
                 <link rel="canonical" href="https://animationrush.com" />
             </Helmet>
-
-
+            <Header />
             <Banner
                 subheading="Bringing Your Ideas to Life with Expertise and Creativity"
                 heroTitle="Professional Video Production Company Your Vision, Our Expertise"
@@ -182,9 +176,9 @@ const Home = () => {
                 // heading2=" Unique"
                 description={
                     <>
-                        We are a top creative video production company that believes in combining traditional innovative storytelling with the latest technology. The experience has made our staff realize that the client's vision should always come first above anything. We create masterpieces or tell wonderful stories while still using the newest tools and techniques by achieving moving pictures that will literally go beyond your viewers. 
- <br></br> <br></br>
-Including optimization and maximizing reach is what our videos can do for your audience. Designing brand new types of engaging media, audio, and creative content for social media sites, websites, email marketing, and digital advertising will connect you with your audience and produce results.
+                        We are a top creative video production company that believes in combining traditional innovative storytelling with the latest technology. The experience has made our staff realize that the client's vision should always come first above anything. We create masterpieces or tell wonderful stories while still using the newest tools and techniques by achieving moving pictures that will literally go beyond your viewers.
+                        <br></br> <br></br>
+                        Including optimization and maximizing reach is what our videos can do for your audience. Designing brand new types of engaging media, audio, and creative content for social media sites, websites, email marketing, and digital advertising will connect you with your audience and produce results.
 
                     </>
                 }

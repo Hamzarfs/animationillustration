@@ -11,7 +11,7 @@ const CtaSection = () => {
                             <p className="unique-section-text mb-0">
                                 Kickstart your <span className="lightblue-h2">Mobile App</span> project today!
                             </p>
-                            <a href="#" className="btn btn-primary unique-section-button px-4 py-2">Get a Quote</a>
+                            <a href="#" className="btn btn-primary unique-section-button px-sm-4 py-2 fw-semibold">Get a Quote</a>
                         </div>
                     </div>
                 </div>

@@ -18,6 +18,8 @@ import ContactUsSection from "../components/common/ContactUsSection"
 import Footer from "../components/common/footer"
 import HeroSection from "../components/common/HeroSection"
 import { Helmet } from 'react-helmet-async';
+import FAQSection from "../components/common/faqsection"
+import faqbg from '../images/faqimg.gif'
 
 
 
@@ -57,6 +59,29 @@ const ServicesPage = () => {
         subtitle: 'kimono photography Agency runs wide and deep. Across many markets, geographies typologies, our team members'
     }
 
+    const faqs = [
+        {
+            question: "What is the process of producing a video?",
+            answer: "Our video production process consists of a few steps: consulting, pre-production, production, post-production, and devising."
+        },
+        {
+            question: "How long should my video be?",
+            answer: "The ideal length of your video depends on your purpose and intended audience. Shorter videos are preferred for social media, while longer videos develop organically over time with the material's theme."
+        },
+        {
+            question: "What is the cost of an explainer video?",
+            answer: "The cost of creating an explainer video depends on the duration, complexity, type of animation applied, and total time spent on it."
+        },
+        {
+            question: "So how many rounds of revisions do I get?",
+            answer: "Every package includes different rounds of revisions. However, our company strives to provide you with a completely satisfying product."
+        },
+        {
+            question: "Why consider Animation Rush as your video animation company?",
+            answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
+        }
+    ];
+
     return (
         <div className="services-page">
             <Helmet>
@@ -64,7 +89,7 @@ const ServicesPage = () => {
                 <meta name="description" content="Explore top-notch animation services, from 2D & 3D animation to motion graphics and visual effects. Elevate your brand with creative, engaging animations today!" />
                 <link rel="canonical" href="https://animationrush.com/services" />
             </Helmet>
-            
+
             <Header />
 
             <HeroSection {...heroSection} />
@@ -76,7 +101,7 @@ const ServicesPage = () => {
                         <p className="description">We stay ahead of the curve, using the latest tools and technologies to deliver high-performance apps.</p>
                     </div>
 
-                    <div className="mx-5">
+                    <div className="mx-sm-5">
                         <a className="slider-button slider-button-prev"><i className="fa-solid fa-chevron-left"></i></a>
                         <a className="slider-button slider-button-next"><i className="fa-solid fa-chevron-right"></i></a>
                         <Swiper
@@ -113,7 +138,7 @@ const ServicesPage = () => {
                 <div className="container">
                     <h1 className="text-center mb-5 display-3 fw-semibold">Our Approach to Excellence</h1>
                     <div className="row g-4">
-                        <div className="col-md-3 approach-card">
+                        <div className="col-xl-3 col-md-6 approach-card">
                             <div className="custom-card">
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
@@ -128,7 +153,7 @@ const ServicesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 approach-card">
+                        <div className="col-xl-3 col-md-6 approach-card">
                             <div className="custom-card">
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
@@ -143,7 +168,7 @@ const ServicesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 approach-card">
+                        <div className="col-xl-3 col-md-6 approach-card">
                             <div className="custom-card">
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
@@ -158,7 +183,7 @@ const ServicesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 approach-card">
+                        <div className="col-xl-3 col-md-6 approach-card">
                             <div className="custom-card">
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
@@ -182,18 +207,20 @@ const ServicesPage = () => {
             <section className="approach-section-2 py-5">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
-                            <img src={approachSecImg} alt="Our Approach to Excellence" className="img-fluid" />
+                        <div className="col-lg-6">
+                            <div className="d-flex align-items-center justify-content-center h-100">
+                                <img src={approachSecImg} alt="Our Approach to Excellence" className="img-fluid" />
+                            </div>
                         </div>
 
-                        <div className="col-md-6">
+                        <div className="col-lg-6 second-column">
                             <div className="d-flex align-items-center h-100">
                                 <div>
-                                    <h2 className="display-5 fw-semibold mb-4">Our Approach to Excellence</h2>
+                                    <h2 className="display-5 fw-semibold">Our Approach to Excellence</h2>
 
-                                    <p className="mb-4">Creating a fictional world is an art, and our expert writers are here to help you perfect it. Whether you have a plot, characters,  just a concept, we transform your vision into a compelling and professionally</p>
+                                    <p className="">Creating a fictional world is an art, and our expert writers are here to help you perfect it. Whether you have a plot, characters,  just a concept, we transform your vision into a compelling and professionally</p>
 
-                                    <p className="mb-4">Creating a fictional world is an art, and our expert ghostwriters are here to help you perfect it. Whether you have a plot, characters just a concept.</p>
+                                    <p className="">Creating a fictional world is an art, and our expert ghostwriters are here to help you perfect it. Whether you have a plot, characters just a concept.</p>
 
                                     <a href="#" className="btn btn-primary unique-section-button px-4 py-2">Get a Quote</a>
 
@@ -204,6 +231,8 @@ const ServicesPage = () => {
 
                 </div>
             </section>
+
+            <FAQSection faqs={faqs} image={faqbg} />
 
             <LogoAnimationSection />
 

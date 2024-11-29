@@ -8,7 +8,7 @@ const LogoAnimationSection = () => {
             <div className="container">
                 <div className="row align-items-center">
                     {/* Left Section */}
-                    <div className="col-md-4 text-end mb-4 mb-md-0">
+                    <div className="first-column col-md-4 text-end mb-4 mb-md-0">
                         <img
                             src={animationsSecImg}
                             alt="The Unsteady Logo"
@@ -19,10 +19,9 @@ const LogoAnimationSection = () => {
                     {/* Right Section */}
                     <div className="col-md-8">
                         <div className="right-column text-center">
-                            <h1 className="section-heading">
-                                Offering <span className="highlight">Nationwide Logo Animation</span> In
-                                <br /> US And Canada
-                            </h1>
+                            <h2 className="section-heading">
+                                Offering <span className="highlight">Nationwide Logo Animation</span> In US And Canada
+                            </h2>
                             <ul className="list-unstyled mt-5 fa-ul">
                                 <li className="mb-2 fw-semibold"><i className="fa-li fa-solid fa-circle"></i><span>logo animation in Los Angeles, CA</span></li>
                                 <li className="mb-2 fw-semibold"><i className="fa-li fa-solid fa-circle"></i><span>logo animation in Edwards, CO</span></li>

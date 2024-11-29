@@ -21,10 +21,46 @@
     color: #7A7A7A;
 }
 
-.contact-us-section
-#contact-us-form
-button[type=submit] {
+.contact-us-section #contact-us-form button[type=submit] {
     background-color: #3DD8E0 !important;
     color: white;
     font-weight: 700;
 }
+
+/* For screen 1400px to 1920px */
+@media (max-width: 1919.98px) {}
+
+/* For screen 1200px to 1399px */
+@media (max-width: 1399.98px) {}
+
+/* For screen 992px to 1199px */
+@media (max-width: 1199.98px) {
+    .contact-us-section {
+        padding: 70px 0;
+    }
+
+    .contact-us-section #contact-us-form button[type=submit] {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {
+    .contact-us-section .second-column {
+        margin-top: 30px;
+    }
+}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {
+    .contact-us-section {
+        padding: 50px 0;
+    }
+}
+
+/* For screen 320px to 479px */
+@media (max-width: 479.98px) {}

@@ -3,6 +3,7 @@
 .choose-service-icon-box img {
     width: 71px;
 }
+
 .awards-logo-section {
     padding: 5rem 0;
     background: #E5FBFC;
@@ -88,6 +89,7 @@ h2.choose-service-heading.font-weight-bold {
     background-color: #3DD8E0;
     border-color: white;
 }
+
 .unique-section-button:hover {
     background-color: #2780C3;
 }
@@ -120,5 +122,37 @@ h2.choose-service-heading.font-weight-bold {
 
     .awards-logo-section h2 {
         font-size: 2.2rem;
+    }
+}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {
+    .unique-section-text {
+        font-size: 25px;
+    }
+}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {
+    .unique-section-text {
+        font-size: 17px;
+    }
+}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {
+    .unique-section-text {
+        font-size: 14px;
+    }
+
+    .unique-section-button {
+        font-size: 14px;
+    }
+}
+
+/* For screen 320px to 479px */
+@media (max-width: 479.98px) {
+    .unique-section-text {
+        width: 56%;
     }
 }

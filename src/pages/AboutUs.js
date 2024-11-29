@@ -81,14 +81,12 @@ const About = () => {
     ];
     return (
         <div>
-            <Header/>
+            <Header />
             <Helmet>
                 <title>About Us | Animation Rush</title>
                 <meta name="description" content="Explore Animation Rush—our mission, vision, and the creative team driving our innovative digital solutions. Learn about our story on our About Us page." />
                 <link rel="canonical" href="https://animationrush.com/about-us" />
             </Helmet>
-            <ContactUsform/>
-            <Footer/>
             <ImageRightBanner
                 // subHeading="ABOUT US"
                 heading="Innovative App"
@@ -110,15 +108,15 @@ const About = () => {
             // buttonUrl="https://www.facebook.com/"
             />
             <ImageLeftTab
-            imageleft={aboutus2}
+                imageleft={aboutus2}
             />
             <CustomServices
                 customserviceheading={customserviceheading}
                 customservicedescription={customservicedescription}
                 customservicesteps={customservicesteps} />
-            <CtaSection/>
+            <CtaSection />
 
-<ImageRightBanner
+            <ImageRightBanner
                 // subHeading="ABOUT US"
                 heading="Innovative App"
                 headinglightblue=" Solutions"
@@ -132,14 +130,14 @@ const About = () => {
                 imageSrc={aboutus3}
                 objectfit="contain"
                 imageHeight="500px"  // Set height here
-              
+
                 borderRadius="10px"
                 reverseOrder={true}
             // updatePopupTitle={handleTitleChange}
             // buttonUrl="https://www.facebook.com/"
             />
- <FAQSection faqs={faqs} image={faqimg} />
-                    <Footer/>
+            <FAQSection faqs={faqs} image={faqimg} />
+            <Footer />
         </div>
     );
 };
