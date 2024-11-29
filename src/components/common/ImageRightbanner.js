@@ -4,7 +4,7 @@ import '../../ImageRightbanner.css';
 const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHeight, imageWidth, objectfit, borderRadius, reverseOrder, updatePopupTitle, headinglightblue, heading2 }) => {
     return (
         <section className="image-right-banner">
-            <div className="container py-5">
+            <div className="container">
                 <div className="row align-items-center">
                     {/* Left Column: Text or Image based on reverseOrder */}
                     <div className={`col-12 col-md-6 mb-4 mb-md-0 ${reverseOrder ? 'order-md-2' : ''}`}>
