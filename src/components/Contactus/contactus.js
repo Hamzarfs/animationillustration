@@ -54,7 +54,7 @@ const ContactUsform = () => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/contact.php", {
+        await fetch("https://animationrush.com/php_mailer/contact.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
