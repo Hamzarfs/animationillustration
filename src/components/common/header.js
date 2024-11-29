@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import animationlogo from '../../images/AnimationRushlogo.png';
+import animationlogo from '../../images/animatedlogo.gif';
 import { NavLink } from 'react-router-dom';  // Change Link to NavLink
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // For JS functionality (hamburger)
@@ -20,8 +20,8 @@ const Header = () => {
         <section id="header">
             <nav className="navbar navbar-expand-xl bg-body-tertiary">
                 <div className="container">
-                    <NavLink to="/" className="navbar-brand" >
-                        <img src={animationlogo} alt="Brand Logo" />
+                    <NavLink to="/" className="navbar-brand">
+                        <img className='animatedlogo' src={animationlogo} alt="Brand Logo" />
                     </NavLink>
 
                     <button
@@ -43,7 +43,7 @@ const Header = () => {
                                     to="/"
                                     // exact
                                     className="nav-link"
-                                    // activeClassName="active-link"  // This will add the class "active-link"
+                                // activeClassName="active-link"  // This will add the class "active-link"
                                 >
                                     Home
                                 </NavLink>
@@ -52,7 +52,7 @@ const Header = () => {
                                 <NavLink
                                     to="/about-us"
                                     className="nav-link"
-                                    // activeClassName="active-link"
+                                // activeClassName="active-link"
                                 >
                                     About Us
                                 </NavLink>
@@ -61,7 +61,7 @@ const Header = () => {
                                 <NavLink
                                     to="/services"
                                     className="nav-link"
-                                    // activeClassName="active-link"
+                                // activeClassName="active-link"
                                 >
                                     Services
                                 </NavLink>
@@ -70,7 +70,7 @@ const Header = () => {
                                 <NavLink
                                     to="/designing"
                                     className="nav-link"
-                                    // activeClassName="active-link"
+                                // activeClassName="active-link"
                                 >
                                     Designing
                                 </NavLink>
@@ -79,7 +79,7 @@ const Header = () => {
                                 <NavLink
                                     to="/book-editing"
                                     className="nav-link"
-                                    // activeClassName="active-link"
+                                // activeClassName="active-link"
                                 >
                                     Book Editing
                                 </NavLink>
@@ -88,7 +88,7 @@ const Header = () => {
                                 <NavLink
                                     to="/other-services"
                                     className="nav-link"
-                                    // activeClassName="active-link"
+                                // activeClassName="active-link"
                                 >
                                     Other Services
                                 </NavLink>
@@ -97,7 +97,7 @@ const Header = () => {
                                 <NavLink
                                     to="/contact-us"
                                     className="nav-link"
-                                    // activeClassName="active-link"
+                                // activeClassName="active-link"
                                 >
                                     Contact Us
                                 </NavLink>

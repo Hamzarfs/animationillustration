@@ -86,6 +86,9 @@
   transition: all 0.3s ease; /* For smooth transitions */
 }
 
+img.animatedlogo {
+  width: 151px;
+}
 /* Hover effect on nav links */
 #header .nav-link:hover {
   color: #215E89; /* Change to pinkish color on hover */
@@ -129,3 +132,75 @@
   background-color: #042842; 
   transform: scale(1.05); 
 }
+
+
+/* Footer Styles */
+.footer {
+  background-color: #215E89;
+  /* Footer background color */
+  padding-top: 40px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.footer .footer-heading {
+  font-weight: bold;
+ 
+  margin-bottom: 10px;
+
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-right: 50px;
+}
+
+.footer .footer-links {
+  padding-left: 0;
+  /* Remove padding for the links */
+}
+
+.footer .footer-links li {
+  list-style: none;
+  text-align: left;
+  /* Align list items to the left */
+}
+
+.footer .footer-links a {
+  color: #ffffff;
+  /* Set link color to white */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer .footer-links a:hover {
+  color: #dbe1ff;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin-right: 10px;
+}
+
+.footer .payment-icons img {
+  max-width: 160px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-bottom a:hover {
+  color: #dbe1ff;
+}
+/* End Footer Styles */

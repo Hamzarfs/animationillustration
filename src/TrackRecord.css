@@ -1,0 +1,53 @@
+.trackrecord {
+    background-color: #e0f5f6;
+    padding: 60px 0;
+  }
+  
+  .trackrecord-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .trackrecord-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  .lightblue-h2 {
+    color: #40c9d4;
+
+    margin-bottom: 10px;
+  }
+
+
+  .track-record-num h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+  
+  .trackrecord-border {
+    border-right: 1px solid #ddd;
+  }
+  
+  .trackrecord .row {
+    align-items: center;
+  }
+  
+  .trackrecord p {
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .trackrecord-border {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+    }
+  }
+  
