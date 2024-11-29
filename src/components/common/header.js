@@ -96,9 +96,11 @@ const Header = () => {
                         </ul>
 
                         {/* Right-aligned button */}
-                        <button onClick={openModal} className="header-btn" style={{ cursor: 'pointer' }}>
-                            Get a Quote
-                        </button>
+                        <NavLink to='/contact-us'>
+                            <button onClick={openModal} className="header-btn" style={{ cursor: 'pointer' }}>
+                                Get a Quote
+                            </button>
+                        </NavLink>
 
                         {/* <PopupForm1 isOpen={isModalOpen} closeModal={closeModal} /> */}
                     </div>
