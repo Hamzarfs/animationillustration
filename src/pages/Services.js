@@ -18,6 +18,7 @@ import "swiper/css/navigation";
 import CtaSection from "../components/common/ctasection"
 import LogoAnimationSection from "../components/common/LogoAnimationSection"
 import ContactUsSection from "../components/common/ContactUsSection"
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -54,7 +55,11 @@ const ServicesPage = () => {
     return (
         <div className="services-page">
             <Header />
-
+            <Helmet>
+                <title>Our Services | Animation Rush</title>
+                <meta name="description" content="Explore top-notch animation services, from 2D & 3D animation to motion graphics and visual effects. Elevate your brand with creative, engaging animations today!" />
+                <link rel="canonical" href="https://animationrush.com/services" />
+            </Helmet>
             <section className="hero-section text-center text-white py-5 mx-auto"
                 style={{ backgroundImage: `url(${heroBgImg})` }}>
                 <div className="d-flex h-100 align-items-center justify-content-center">

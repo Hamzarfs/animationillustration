@@ -6,19 +6,23 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import Home from './pages/Home';
 import About from './pages/AboutUs';
 import ServicesPage from './pages/Services';
- 
+import { HelmetProvider } from 'react-helmet-async';
+
+
 import Contactus from './pages/ContactUs';
 
 const App = () => {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about-us" element={<About />} />
-                <Route path="/services" element={<ServicesPage />} />
-                <Route path="/contact-us" element={<Contactus />} />
-            </Routes>
-        </Router>
+        <HelmetProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about-us" element={<About />} />
+                    <Route path="/services" element={<ServicesPage />} />
+                    <Route path="/contact-us" element={<Contactus />} />
+                </Routes>
+            </Router>
+        </HelmetProvider>
     );
 };
 

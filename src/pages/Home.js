@@ -30,6 +30,8 @@ import TrackRecord from '../components/Home/trackrecord';
 import CommitmentClient from '../components/Home/Commitment';
 import FAQSection from '../components/common/faqsection';
 import Footer from '../components/common/footer';
+import { Helmet } from 'react-helmet-async';
+
 
 const Home = () => {
 
@@ -121,7 +123,11 @@ const Home = () => {
             title: "Creative Logo Animation",
             description: "We pay attention to every detail,ensuring that your logo animation is a reflection of your brand's personalityand style."
         }
-    ];
+    ];<Helmet>
+    <title>Video Production Company In USA | Animation Rush</title>
+    <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
+    <link rel="canonical" href="http://theappdesign.com" />
+</Helmet>
 
 
     const faqs = [
@@ -150,6 +156,13 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <Helmet>
+                <title>Video Production Company In USA | Animation Rush</title>
+                <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
+                <link rel="canonical" href="https://animationrush.com" />
+            </Helmet>
+
+
             <Banner
                 subheading="Best Illustration Services"
                 heroTitle="Share Your Brand's Story With Memorable Animated Illustrations"
