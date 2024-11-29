@@ -1,22 +1,6 @@
-.services-page .hero-section {
-    background-color: #215E89;
-    background-blend-mode: soft-light;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    width: 1500px;
-}
 
-.services-page .hero-section .custom-btn {
-    background-color: #2780C3;
-    color: white;
-    border-radius: 85px;
-    padding: 13px 32px;
-    font-weight: 600;
-}
 
 .services-page .services-we-deliver .description {
-    width: 580px;
     margin: 0 auto 50px;
 }
 
@@ -35,12 +19,62 @@
 }
 
 .services-page .services-we-deliver .slider-button-prev {
-    left: 200px;
+    left: 15%;
 }
 
 .services-page .services-we-deliver .slider-button-next {
-    right: 200px;
+    right: 15%;
 }
+
+
+/* For screen 1400px to 1920px */
+@media (max-width: 1919.98px) {
+    .services-page .services-we-deliver .slider-button-prev {
+        left: 2%;
+    }
+    
+    .services-page .services-we-deliver .slider-button-next {
+        right: 2%;
+    }
+}
+
+/* For screen 1200px to 1399px */
+@media (max-width: 1399.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 400px;
+    }
+
+    /* .services-page .services-we-deliver .slider-button-prev {
+        left: 2%;
+    }
+    
+    .services-page .services-we-deliver .slider-button-next {
+        right: 2%;
+    } */
+}
+
+/* For screen 992px to 1199px */
+@media (max-width: 1199.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 450px;
+    }
+}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {
+    .services-page .services-we-deliver .services-slide img {
+        height: 400px;
+    }
+}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {}
+
+/* For screen 350px to 479px */
+@media (max-width: 479.98px) {}
 
 
 .services-page .approach-section .custom-card {

@@ -1,0 +1,91 @@
+.hero-section {
+    background-color: #215E89;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 1400px;
+}
+
+.hero-section .custom-btn {
+    background-color: #2780C3;
+    color: white;
+    border-radius: 85px;
+    padding: 13px 32px;
+    font-weight: 600;
+}
+
+.hero-section .lead {
+    width: 60%;
+}
+
+
+/* For screen 1200px to 1399px */
+@media (max-width: 1399.98px) {
+    .hero-section {
+        height: 450px;
+        width: 1000px;
+    }
+}
+
+/* For screen 992px to 1199px */
+@media (max-width: 1199.98px) {}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {
+    .hero-section {
+        height: 350px;
+        width: 100%;
+    }
+
+    .hero-section .lead {
+        width: 70%;
+    }
+}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-section .lead {
+        width: 95%;
+    }
+}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-section .lead {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section .custom-btn {
+        padding: 7px 20px;
+    }
+}
+
+/* For screen 350px to 479px */
+@media (max-width: 479.98px) {
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-section h1 {
+        font-size: 25px;
+    }
+
+    .hero-section .lead {
+        width: 90%;
+        font-size: 13px;
+    }
+}

@@ -9,15 +9,14 @@ import approachSecIcon2 from '../images/slick.png'
 import approachSecIcon3 from '../images/unleash.png'
 import approachSecIcon4 from '../images/right-path.png'
 import approachSecImg from '../images/our-approach-img.png'
-
-
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation } from "swiper/modules"
+import { Navigation, Autoplay } from "swiper/modules"
 import "swiper/css";
-import "swiper/css/navigation";
 import CtaSection from "../components/common/ctasection"
 import LogoAnimationSection from "../components/common/LogoAnimationSection"
 import ContactUsSection from "../components/common/ContactUsSection"
+import Footer from "../components/common/footer"
+import HeroSection from "../components/common/HeroSection"
 
 
 
@@ -51,20 +50,17 @@ const ServicesPage = () => {
         },
     ]
 
+    const heroSection = {
+        title: 'Services',
+        image: heroBgImg,
+        subtitle: 'kimono photography Agency runs wide and deep. Across many markets, geographies typologies, our team members'
+    }
+
     return (
         <div className="services-page">
             <Header />
 
-            <section className="hero-section text-center text-white py-5 mx-auto"
-                style={{ backgroundImage: `url(${heroBgImg})` }}>
-                <div className="d-flex h-100 align-items-center justify-content-center">
-                    <div>
-                        <h1 className="display-4">Services</h1>
-                        <p className="lead">Kimano photography agency runs wide and deep...</p>
-                        <a href="#" className="btn custom-btn">Discover More</a>
-                    </div>
-                </div>
-            </section>
+            <HeroSection {...heroSection} />
 
             <section className="services-we-deliver py-5 position-relative">
                 <div className="container">
@@ -77,12 +73,13 @@ const ServicesPage = () => {
                         <a className="slider-button slider-button-prev"><i className="fa-solid fa-chevron-left"></i></a>
                         <a className="slider-button slider-button-next"><i className="fa-solid fa-chevron-right"></i></a>
                         <Swiper
-                            modules={[Navigation]}
+                            modules={[Navigation, Autoplay]}
                             navigation={{
                                 nextEl: ".slider-button-next",
                                 prevEl: ".slider-button-prev",
                             }}
                             loop
+                            autoplay={false}
                             slidesPerView={3}
                             spaceBetween={30}
                             breakpoints={{
@@ -204,6 +201,8 @@ const ServicesPage = () => {
             <LogoAnimationSection />
 
             <ContactUsSection />
+
+            <Footer />
 
         </div>
     )
