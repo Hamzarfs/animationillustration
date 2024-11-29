@@ -2,21 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/common/header';
 import Footer from '../components/common/footer';
-import ContactUsform from '../components/Contactus/contactus';
+import { Helmet } from 'react-helmet-async';
 import ImageRightBanner from '../components/common/ImageRightbanner';
-import aboutus1 from '../images/aboutus2.gif';
-import aboutus2 from '../images/missionvision.gif';
+import aboutus1 from '../images/aboutuscharacter.gif';
+import aboutus2 from '../images/vision.gif';
 import aboutus3 from '../images/aboutus3.png';
 import ImageLeftTab from '../Aboutus/Imagelefttabs';
 import CtaSection from '../components/common/ctasection';
 import FAQSection from '../components/common/faqsection';
 import faqimg from '../images/faqimg.gif';
-import CustomServices from '../components/Home/customservice';
 import appvalues1 from '../images/Appvalues1.png';
 import appvalues2 from '../images/Appvalues2.png';
 import appvalues3 from '../images/Appvalues3.png';
 import appvalues4 from '../images/Appvalues4.png';
 import AboutService from '../Aboutus/aboutservice';
+import HeroSection from '../components/common/HeroSection';
+import heroBgImg from '../images/aboutusbanner.png'
 
 const About = () => {
 
@@ -76,9 +77,22 @@ const About = () => {
           answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
         }
       ];
+      const heroSection = {
+        title: 'About Us',
+        image: heroBgImg,
+        subtitle: 'Animation Rush is a confluence of artistry and technology, dedicated to creating animations that speak volumes.'
+    }
     return (
         <div>
+                <Helmet>
+                <title>About Us | Animation Rush</title>
+                <meta name="description" content="Explore Animation Rush—our mission, vision, and the creative team driving our innovative digital solutions. Learn about our story on our About Us page." />
+                <link rel="canonical" href="https://animationrush.com/about-us" />
+            </Helmet>
             <Header />
+            <HeroSection 
+            {...heroSection} />
+            
             <ImageRightBanner
                 // subHeading="ABOUT US"
                 heading="Where Creativity Meets"

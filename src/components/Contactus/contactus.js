@@ -54,7 +54,7 @@ const ContactUsform = () => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/contact.php", {
+        await fetch("https://animationrush.com/php_mailer/contact.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -68,19 +68,19 @@ const ContactUsform = () => {
             })
     }
     return (
-        <section className="contactuspg-section py-5">
+        <section className="contactuspg-section py-4">
             <div className="container">
                 <div className="row justify-content-center">
                     {/* Heading and Text */}
-                    <div className="col-12 text-center py-5">
-                        <h2 className="contactuspg-heading-row">Want a Guide Contact Us today</h2>
-                        <p className="contactuspg-subtext">A place where talent and ambition can soar. Unleash your creativity and let your talents take center stage.  <br />When you work with us, you step into a world where your passion meets our purpose.</p>
+                    <div className="col-12 text-center ">
+                        <h2 className="contactuspg-heading-row mb-3">Let’s Animate Your Vision to Life</h2>
+                        <p className="contactuspg-subtext">We’re excited to collaborate with you! Whether you’re ready to start your next animation project or just exploring ideas, our team is here to make it happen. Reach out to us through any of the channels below:</p>
                     </div>
                 </div>
                 {/* First Row - Heading and Subtext */}
 
-                <div className="contactuspg-bg py-5">
-                    <div className="contactuspg-heading-row text-center mb-4">
+                <div className="contactuspg-bg ">
+                    <div className="contactuspg-heading-row text-center py-2">
                         <h2 className="contactuspg-heading">Contact Us</h2>
                         <p className="contactuspg-subtext">Any question or remarks? Just write us a message!</p>
                     </div>
@@ -103,23 +103,23 @@ const ContactUsform = () => {
                             >
 
                                 <h3>Contact Information</h3>
-                                <p>Say something to start a live chat</p>
+                                <p>Or simply fill out the form, and we’ll get back to you faster than the next animation frame! Let’s create something unforgettable together.</p>
                                 <address>
-                                    <FaMapMarkerAlt /> 43 3rd Ave 2nd Floor, Edison, NJ 08837<br />
+                                    <FaMapMarkerAlt /> 41 Winthrop Rd, Edison, NJ 08817<br />
                                 </address>
-                                <a href="tel:+1 (551) 554-3283" className="contactuspg-link">
+                                <a href="tel:+15515543283" className="contactuspg-link">
                                     <FaPhoneAlt /> +1 (551) 554-3283
                                 </a><br />
-                                <a href="mailto:info@webdesignmania.com" className="contactuspg-link">
-                                    <FaEnvelope /> info@webdesignmania.com
+                                <a href="mailto:info@animationrush.com" className="contactuspg-link">
+                                    <FaEnvelope /> info@animationrush.com
                                 </a>
 
                                 {/* Social Icons */}
                                 <div className="contactuspg-social-icons d-flex">
-                                    <a href="#" className="contactuspg-icon"><FaFacebookF /></a>
-                                    <a href="#" className="contactuspg-icon"><FaInstagram /></a>
-                                    <a href="#" className="contactuspg-icon"><FaTwitter /></a>
-                                    <a href="#" className="contactuspg-icon"><FaLinkedin /></a>
+                                    <a href="https://www.facebook.com/AnimationRush/" className="contactuspg-icon"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/animationrush_us/" className="contactuspg-icon"><FaInstagram /></a>
+                                    {/* <a href="#" className="contactuspg-icon"><FaTwitter /></a> */}
+                                    <a href="https://www.linkedin.com/company/animation-rush/" className="contactuspg-icon"><FaLinkedin /></a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ const ContactUsform = () => {
                                     <textarea className="form-control contactuspg-input" rows="5" onChange={handleChange} value={formData.message} name='message' placeholder="Message" required></textarea>
                                 </div>
                                 <div className="text-end">
-                                    <button type="submit" className="btn btn-submit" disabled={loading}>
+                                    <button type="submit" className="btn-submit" disabled={loading}>
                                         {loading ? (
                                             <>
                                                 <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>

@@ -105,7 +105,7 @@ const Header = () => {
                         </ul>
 
                         {/* Right-aligned button */}
-                        <button onClick={openModal} className="header-btn ms-5" style={{ cursor: 'pointer' }}>
+                        <button onClick={openModal} className="header-btn" style={{ cursor: 'pointer' }}>
                             Get a Quote
                         </button>
 

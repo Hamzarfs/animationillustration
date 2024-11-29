@@ -5,9 +5,9 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
     return (
         <section className="image-right-banner">
             <div className="container">
-                <div className="row align-items-center">
+                <div className="row align-items-center py-4">
                     {/* Left Column: Text or Image based on reverseOrder */}
-                    <div className={`col-12 col-md-6 mb-4 mb-md-0 ${reverseOrder ? 'order-md-2' : ''}`}>
+                    <div className={`col-12 col-md-6 mb-md-0 ${reverseOrder ? 'order-md-2' : ''}`}>
                         <h2 className="sub-heading">{subHeading}</h2>
                         <h2 className="about-heading">{heading}<span className="lightblue-h2">{headinglightblue}</span>{heading2}</h2>
                         <p className="design-process-description">{description}</p>
@@ -17,7 +17,7 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
                     </div>
 
                     {/* Right Column: Image or Text based on reverseOrder */}
-                    <div className={`col-12 col-md-6 text-center align-content-center ${reverseOrder ? 'order-md-1' : ''}`} style={{ minHeight: imageHeight }}>
+                    <div className={`col-12 col-md-6 text-center align-content-center ${reverseOrder ? 'order-md-1' : ''}`} >
                         <img
                             src={imageSrc}
                             alt="Ghostwriting"

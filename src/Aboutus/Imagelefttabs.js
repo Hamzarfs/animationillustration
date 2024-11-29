@@ -25,12 +25,11 @@ const ImageLeftTab = ({ imageleft, imageHeight, imageWidth, objectfit }) => {
 
           {/* Right Column (Content) */}
           <div className="col-md-6">
-            <h1 className="imagelefttab-heading">
+            <h2 className="imagelefttab-heading">
           
-            Our Approach to  
-            {/* <span>E-Book</span>  */}
-              Excellence
-            </h1>
+            Our Approach to   <span> Excellence</span> 
+               
+            </h2>
             <p className="imagelefttab-description">
             Our approach is driven by a passion for storytelling and a deep understanding of the animation process. By combining cutting-edge techniques with a keen sense of creativity, we produce animations that engage, inform, and inspire. At Animation Rush, we don’t just animate—we create experiences that resonate and leave a lasting impact.
             </p>

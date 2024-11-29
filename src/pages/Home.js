@@ -30,6 +30,8 @@ import TrackRecord from '../components/Home/trackrecord';
 import CommitmentClient from '../components/Home/Commitment';
 import FAQSection from '../components/common/faqsection';
 import Footer from '../components/common/footer';
+import { Helmet } from 'react-helmet-async';
+
 
 const Home = () => {
 
@@ -145,12 +147,17 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Video Production Company In USA | Animation Rush</title>
+        <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
+        <link rel="canonical" href="https://animationrush.com" />
+      </Helmet>
       <Header />
       <Banner
         subheading="Bringing Your Ideas to Life with Expertise and Creativity"
         heroTitle="Professional Video Production Company Your Vision, Our Expertise"
         description="As a creative video production company, we shape bright and beautiful developing videos. Our team of exemplary professionals will bring your ideas from concept to completion. Whether commercial, explanatory, or brand-film cinematic, we got it for you."
-        buttonText="Contact Us Today!"
+        buttonText="Get Started"
         buttonLink="/contact" // Replace with your actual link
         backgroundImage={bannerImage} // Provide the background image URL
       />

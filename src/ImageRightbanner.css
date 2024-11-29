@@ -59,6 +59,9 @@
 
 
 @media (max-width: 768px) {
+  img.img-fluid.img-animate {
+    height: 300px !important;
+}
 
 .image-right-banner {
     text-align: center;

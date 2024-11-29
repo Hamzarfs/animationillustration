@@ -11,19 +11,18 @@ const StepSection = () => {
       <div className="container">
         {/* Section Heading and Description */}
         <div className="section-header text-center">
-          <h2>Our Affordable App Design Service Scope</h2>
-          <p>Mobile Application design services include building app interfaces that are both user-friendly and interesting.<br/> 
-          These services improve user engagement, build a strong brand identity, optimize app functioning, and boost sales. </p>
+          <h2>Flaunting Animation Our Seamless Development Workflow
+          </h2>
+          <p>At Animation Rush, we believe that a flawless process leads to exceptional results. <br/> 
+          Our approach is structured, technified, transparent, and collaborative, ensuring that every step contributes to the creation of high-quality animations. Here’s how we bring your vision to life </p>
         </div>
 
         {/* Step 1 */}
         <div className="row align-items-center">
           {/* Left Content */}
           <div className="col-12 col-md-5 order-2 order-md-1 step-content text-center text-md-end">
-            <h2>Research and Analysis</h2>
-            <p>We begin by deeply understanding your business needs and target audience. Through thorough research and analysis, we gather 
-              insights that inform the design process, ensuring the app meets user expectations. This strategic approach helps create a solid 
-              foundation for a functional, intuitive app.</p>
+            <h2>Discovery & Ideation</h2>
+            <p>We start by understanding your goals, mindset, our audience, and their vision. This phase go thorough discussions, brainstorming,ice breaking  and gathering insights and creative ideas to ensure we align on the project's direction.</p>
           </div>
           {/* Center Step */}
           <div className="col-12 col-md-2 order-1 step-box">
@@ -45,10 +44,8 @@ const StepSection = () => {
           </div>
           {/* Right Content */}
           <div className="col-12 col-md-5 order-2 order-md-3 step-content text-center text-md-start">
-            <h2>UX Design</h2>
-            <p>After completing a thorough project analysis and roadmap, we focus on designing intuitive and engaging user experiences that make 
-              navigation effortless. By understanding your user's needs, we craft user flows that ensure seamless interactions. Our goal is to 
-              create an app that feels natural, easy to use and keeps users coming back.</p>
+            <h2>Concept Development</h2>
+            <p>Next, we create a detailed concept that outlines the core idea, characters, and animation style. Through mood boards, storyboards, and rough sketches, we bring the idea to life on paper, ensuring everything is aligned with your expectations!</p>
           </div>
           {/* Left Image */}
           <div className="col-12 col-md-5 order-3 order-md-1 step-image">
@@ -60,10 +57,8 @@ const StepSection = () => {
         <div className="row align-items-center">
           {/* Left Content */}
           <div className="col-12 col-md-5 order-2 order-md-1 step-content text-center text-md-end">
-            <h2>UI Design</h2>
-            <p>Our UI designers focus on creating visually striking interfaces that reflect your brand identity. Whether maintaining your existing color scheme, 
-              fonts, and graphic style or reinventing your image with a fresh design, we ensure your app stands out. We collaborate closely with you, offering expert 
-              insights and innovative ideas to craft a unique visual experience.</p>
+            <h2>Design & Animation</h2>
+            <p>Once the concept is approved, our talented design team starts working on the visual elements, from character designs to environments. Afterward, we move into the animation phase, where we bring those visuals to life with dynamic movements and attention to detail.</p>
           </div>
           {/* Center Step */}
           <div className="col-12 col-md-2 order-1 step-box">
@@ -85,10 +80,8 @@ const StepSection = () => {
           </div>
           {/* Right Content */}
           <div className="col-12 col-md-5 order-2 order-md-3 step-content text-center text-md-start">
-            <h2>Development Process</h2>
-            <p>Our development process ensures that your app is built with precision and efficiency. From backend integration to front-end functionality, we follow best 
-              practices to create a robust, scalable app. At every stage of the development cycle, our mobile app designers ensure usability performance, seamless upgrades, 
-              and intense security.</p>
+            <h2>Final Delivery & Launch</h2>
+            <p>After all revisions are made and error and trial is over ,we deliver the polished animation, ensuring it's ready for deployment across your chosen platforms. Our team ensures that the animation works seamlessly in all environments, whether it's for web, mobile, or other mediums.</p>
           </div>
           {/* Left Image */}
           <div className="col-12 col-md-5 order-3 order-md-1 step-image">
