@@ -1,0 +1,53 @@
+.logo-animation-section .section-heading {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo-animation-section .section-heading .highlight {
+    color: #3DD8E0;
+}
+
+.logo-animation-section ul {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin: auto;
+    width: 30%;
+}
+
+.logo-animation-section ul li {
+    display: flex;
+    align-items: center;
+}
+
+.logo-animation-section .fa-ul .fa-li {
+    font-size: 8px;
+    color: #3DD8E0;
+}
+
+.logo-animation-section .right-column {
+    border: 1px solid #3A32B3;
+    border-radius: 20px;
+    padding: 70px 0;
+    background-color: white;
+}
+
+.logo-animation-section .right-column ul li span {
+    position: relative;
+    left: 10px;
+}
+
+.logo-animation-section .black-rect {
+    position: absolute;
+    bottom: -50px;
+    z-index: 0;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
+
+.logo-animation-section .container {
+    z-index: 1000;
+    position: relative;
+}

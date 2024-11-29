@@ -1,0 +1,95 @@
+.services-page .hero-section {
+    background-color: #215E89;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 1500px;
+}
+
+.services-page .hero-section .custom-btn {
+    background-color: #2780C3;
+    color: white;
+    border-radius: 85px;
+    padding: 13px 32px;
+    font-weight: 600;
+}
+
+.services-page .services-we-deliver .description {
+    width: 580px;
+    margin: 0 auto 50px;
+}
+
+.services-page .services-we-deliver .services-slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.services-page .services-we-deliver .slider-button {
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    font-size: 50px;
+    color: #666666;
+}
+
+.services-page .services-we-deliver .slider-button-prev {
+    left: 200px;
+}
+
+.services-page .services-we-deliver .slider-button-next {
+    right: 200px;
+}
+
+
+.services-page .approach-section .custom-card {
+    background-color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.services-page .approach-section .custom-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-page .approach-section .card-body {
+    padding: 2rem;
+}
+
+.services-page .approach-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.services-page .approach-section .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 25px;
+}
+
+.services-page .approach-section .icon img {
+    width: 55px;
+    height: 55px;
+}
+
+@media (max-width: 768px) {
+    .services-page .approach-section .card-body {
+        padding: 1.5rem;
+    }
+
+    .services-page .approach-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .services-page .approach-section .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+.services-page .approach-section-2 p {
+    line-height: 34px;
+}

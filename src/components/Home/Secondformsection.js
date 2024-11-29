@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "../../SecondFormSec.css";
 import clutchicon from "../../images/clutchicon.png"
 import trust from "../../images/trustpiloticon.png"

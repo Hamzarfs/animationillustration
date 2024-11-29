@@ -1,0 +1,30 @@
+.contact-us-section {
+    background-color: #E5FBFC;
+    padding: 100px 0;
+}
+
+.contact-us-section .highlight {
+    color: #3DD8E0;
+}
+
+.contact-us-section #contact-us-form .form-control {
+    background-color: #E5FBFC;
+    color: #7A7A7A;
+}
+
+.contact-us-section #contact-us-form .form-floating>.form-control:not(:placeholder-shown)~label::after,
+.contact-us-section #contact-us-form .form-floating>.form-control:focus~label::after {
+    background-color: inherit;
+}
+
+.contact-us-section #contact-us-form label {
+    color: #7A7A7A;
+}
+
+.contact-us-section
+#contact-us-form
+button[type=submit] {
+    background-color: #3DD8E0 !important;
+    color: white;
+    font-weight: 700;
+}
