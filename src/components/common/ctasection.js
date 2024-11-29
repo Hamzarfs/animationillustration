@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../awards.css';
+import { NavLink } from 'react-router-dom';
 
 const CtaSection = () => {
     return (
@@ -11,7 +12,9 @@ const CtaSection = () => {
                             <p className="unique-section-text mb-0">
                                 Kickstart your <span className="lightblue-h2">Mobile App</span> project today!
                             </p>
-                            <a href="#" className="btn btn-primary unique-section-button px-sm-4 py-2 fw-semibold">Get a Quote</a>
+                            <NavLink to='/contact-us'>
+                                <a href="#" className="btn btn-primary unique-section-button px-sm-4 py-2 fw-semibold">Get a Quote</a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
