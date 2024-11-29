@@ -1,0 +1,86 @@
+.popupform1-overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .popupform1-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popupform1 h2 {
+    text-align: center;
+  }
+  
+  .popupform1 .input-icon {
+    position: relative;
+  }
+  
+  .popupform1 .icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #888;
+  }
+  
+  .popupform1 input,
+  .popupform1 textarea {
+    width: 100%;
+    padding: 8px 8px 8px 40px; /* Add padding for icons */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .popupform1 button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f76c39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popupform1 .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .newsletter label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter input {
+    margin-right: 8px; /* Space between checkbox and text */
+    
+      width: 50px;
+    
+  }
+  
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
