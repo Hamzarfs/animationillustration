@@ -30,6 +30,8 @@ import TrackRecord from '../components/Home/trackrecord';
 import CommitmentClient from '../components/Home/Commitment';
 import FAQSection from '../components/common/faqsection';
 import Footer from '../components/common/footer';
+import { Helmet } from 'react-helmet-async';
+
 
 const Home = () => {
 
@@ -117,7 +119,11 @@ const Home = () => {
             title: "Sports",
             description: "The studio creates vibrant graphics and animations for sports broadcasts as well as interesting videos promoting sports events and athletes."
         }
-    ];
+    ];<Helmet>
+    <title>Video Production Company In USA | Animation Rush</title>
+    <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
+    <link rel="canonical" href="http://theappdesign.com" />
+</Helmet>
 
 
     const faqs = [
@@ -146,6 +152,13 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <Helmet>
+                <title>Video Production Company In USA | Animation Rush</title>
+                <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
+                <link rel="canonical" href="https://animationrush.com" />
+            </Helmet>
+
+
             <Banner
                 subheading="Bringing Your Ideas to Life with Expertise and Creativity"
                 heroTitle="Professional Video Production Company Your Vision, Our Expertise"

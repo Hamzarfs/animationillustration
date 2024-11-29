@@ -17,6 +17,7 @@ import LogoAnimationSection from "../components/common/LogoAnimationSection"
 import ContactUsSection from "../components/common/ContactUsSection"
 import Footer from "../components/common/footer"
 import HeroSection from "../components/common/HeroSection"
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -58,6 +59,12 @@ const ServicesPage = () => {
 
     return (
         <div className="services-page">
+            <Helmet>
+                <title>Our Services | Animation Rush</title>
+                <meta name="description" content="Explore top-notch animation services, from 2D & 3D animation to motion graphics and visual effects. Elevate your brand with creative, engaging animations today!" />
+                <link rel="canonical" href="https://animationrush.com/services" />
+            </Helmet>
+            
             <Header />
 
             <HeroSection {...heroSection} />
