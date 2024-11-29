@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../awards.css';
+import '../awards.css';
 
-const CustomServices = ({
+const AboutService = ({
   customserviceheading, // Props for the heading
   customservicedescription, // Props for the paragraph
   customservicesteps // Array of steps with image, alt text, title, and description
@@ -22,8 +22,8 @@ const CustomServices = ({
   <div className="row mt-4">
     {customservicesteps.slice(0, 4).map((step, index) => (
       <div className="col-lg-3 col-md-6 mb-3" key={index}>
-        <div className="choose-service-icon-box text-center">
-          <img src={step.customserviceimage} alt={step.alt} className="img-fluid mb-3 about-service-icon" />
+        <div className="choose-service-icon text-center">
+          <img src={step.customserviceimage} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.customservicetitle}</h5>
           <p className="choose-service-icon-text">{step.customservicedescription}</p>
         </div>
@@ -36,4 +36,4 @@ const CustomServices = ({
   );
 };
 
-export default CustomServices;
+export default AboutService;

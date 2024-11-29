@@ -26,11 +26,13 @@ const ImageLeftTab = ({ imageleft, imageHeight, imageWidth, objectfit }) => {
           {/* Right Column (Content) */}
           <div className="col-md-6">
             <h1 className="imagelefttab-heading">
-              Professional <span>E-Book</span> Services
+          
+            Our Approach to  
+            {/* <span>E-Book</span>  */}
+              Excellence
             </h1>
             <p className="imagelefttab-description">
-              Discover how our innovative solutions can transform your story,
-              reduce complexity, and promote high-quality writing.
+            Our approach is driven by a passion for storytelling and a deep understanding of the animation process. By combining cutting-edge techniques with a keen sense of creativity, we produce animations that engage, inform, and inspire. At Animation Rush, we don’t just animate—we create experiences that resonate and leave a lasting impact.
             </p>
 
             {/* Tabs */}
@@ -61,12 +63,12 @@ const ImageLeftTab = ({ imageleft, imageHeight, imageWidth, objectfit }) => {
             <div className="imagelefttab-content">
               {activeTab === "mission" && (
                 <p>
-                  Empower authors by providing comprehensive publishing solutions that elevate their stories. We deliver expert editing, stunning design, and strategic marketing, ensuring that every book meets the industry standards and resonates with its intended audience.
+                  At Animation Rush, our mission is to craft innovative and captivating animations that captivate audiences and inspire change. We are committed to pushing the boundaries of creativity, delivering exceptional, high-quality content that connects with viewers across all industries. Through our passion for storytelling, we aim to spark imagination, educate, and provide meaningful experiences that leave a lasting impact. At Animation Rush, we strive to turn visions into reality, creating animated worlds that resonate deeply and elevate every story we tell.
                 </p>
               )}
               {activeTab === "vision" && (
                 <p>
-                  To be the best publishing partner of every author by turning their visions into a captivating literary reality!
+                To be the driving force behind groundbreaking and Flawless animations that transcend industries and touch lives. At Animation Rush, we believe animation is more than a medium—it’s a universal language that connects, educates, and inspires. To create animations that inspire, engage, and elevate. At Animation Rush, we aim to bridge the gap between imagination and reality, crafting visual stories that resonate on a profound level.
                 </p>
               )}
             </div>
