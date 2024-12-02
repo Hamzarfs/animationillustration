@@ -4,7 +4,7 @@ import whyservice1 from '../../images/whyservice1.png';
 import whyservice2 from '../../images/whyservice2.png';
 import whyservice3 from '../../images/whyservice3.png';
 import whyservice4 from '../../images/whyservice4.png';
-import commitment from '../../images/triplegif.gif';
+import commitment from '../../images/triplecomment1.gif';
 
 const CommitmentClient = () => {
   return (
@@ -18,13 +18,13 @@ const CommitmentClient = () => {
       <div className="container commitmentclient-sec">
         <div className="row ">
           {/* Left Column */}
-          <div className="col-lg-6 col-md-12 commitmentclient-left mb-4">
+          <div className="col-lg-8 col-md-12 commitmentclient-left">
             <h2 className="commitmentclient-heading">Why Choose Our Video Production Services</h2>
             <p className="commitmentclient-description">
             When you put your faith in our video production services, you are actually putting it into a team of professional storytellers who know how to grab your audience within seconds.
             </p>
             <div className="row">
-              <div className="col-md-6 mb-4">
+              <div className="col-md-6">
                 <div className="icon-box">
                   <img
                     src={whyservice1}
@@ -37,7 +37,7 @@ const CommitmentClient = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6 mb-4">
+              <div className="col-md-6">
                 <div className="icon-box">
                   <img
                     src={whyservice2}
@@ -80,7 +80,7 @@ const CommitmentClient = () => {
           </div>
 
           {/* Right Column */}
-          <div className="col-lg-6 col-md-12 commitmentclient-right d-flex justify-content-center">
+          <div className="col-lg-4 col-md-12 commitmentclient-right d-flex justify-content-center">
             <img
               src={commitment}
               alt="Commitment Illustration"

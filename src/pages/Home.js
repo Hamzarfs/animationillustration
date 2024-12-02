@@ -31,47 +31,11 @@ import CommitmentClient from '../components/Home/Commitment';
 import FAQSection from '../components/common/faqsection';
 import Footer from '../components/common/footer';
 import { Helmet } from 'react-helmet-async';
+import ServicesSlider from '../components/Services/Serviceslider';
 
 
 const Home = () => {
 
-
-    const customserviceheading = {
-
-        customservicetitle: "Our Professional ",
-        customservicehighlight: "Video Production",
-        customservicetitle2: " Services"
-
-
-    };
-    const customservicedescription = "As a premium video production company, we offer a wide range of services, including";
-    const customservicesteps = [
-        {
-            customserviceimage: customserviceimage1,
-            alt: "Logo Animation",
-            customservicetitle: "Logo Animation",
-            customservicedescription: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy. "
-        },
-        {
-            customserviceimage: customserviceimage2,
-            alt: "2D Animation",
-            customservicetitle: "2D Animation",
-            customservicedescription: "Translate your imagination into amazing 2D animations. Character animations and background designs are crafted for you by expert artists, providing you with rich visual and engaging content."
-        },
-        {
-            customserviceimage: customserviceimage3,
-            alt: "3D Animation",
-            customservicetitle: "3D Animation",
-            customservicedescription: "Bring lifelike 3D animations that enthrall your audience. From product visualization to cinematic sequences, our expert team does everything."
-        },
-        {
-            customserviceimage: customserviceimage4,
-            alt: "Explainer Video",
-            customservicetitle: "Explainer Video",
-            customservicedescription: "Make your cumbersome concepts easy with our great explainer videos using simple and easy-to-understand visuals with short stories to clarify and educate your audience."
-        }
-
-    ];
     const heading = {
         title: (
             <>
@@ -176,7 +140,7 @@ const Home = () => {
                 // heading2=" Unique"
                 description={
                     <>
-                        We are a top creative video production company that believes in combining traditional innovative storytelling with the latest technology. The experience has made our staff realize that the client's vision should always come first above anything. We create masterpieces or tell wonderful stories while still using the newest tools and techniques by achieving moving pictures that will literally go beyond your viewers.
+                        We are a top creative video production company that believes in combining traditional innovative storytelling with the latest technology. The experience has made our staff realize that the client's vision should always come first above anything. 
                         <br></br> <br></br>
                         Including optimization and maximizing reach is what our videos can do for your audience. Designing brand new types of engaging media, audio, and creative content for social media sites, websites, email marketing, and digital advertising will connect you with your audience and produce results.
 
@@ -189,14 +153,12 @@ const Home = () => {
                 borderRadius="10px"
                 reverseOrder={false}
             // updatePopupTitle={handleTitleChange}
-            // buttonUrl="https://www.facebook.com/"
+            buttonUrl="https://www.facebook.com/"
             />
             <PortfolioGallery />
+            <ServicesSlider/>
 
-            <CustomServices
-                customserviceheading={customserviceheading}
-                customservicedescription={customservicedescription}
-                customservicesteps={customservicesteps} />
+          
             <TrackRecord />
             <CommitmentClient />
             <FAQSection faqs={faqs} image={faqimg} />

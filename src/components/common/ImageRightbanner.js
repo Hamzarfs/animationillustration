@@ -4,16 +4,16 @@ import '../../ImageRightbanner.css';
 const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHeight, imageWidth, objectfit, borderRadius, reverseOrder, updatePopupTitle, headinglightblue, heading2 }) => {
     return (
         <section className="image-right-banner">
-            <div className="container">
+            <div className="container ">
                 <div className="row align-items-center py-4">
                     {/* Left Column: Text or Image based on reverseOrder */}
                     <div className={`col-12 col-md-6 mb-md-0 ${reverseOrder ? 'order-md-2' : ''}`}>
                         <h2 className="sub-heading">{subHeading}</h2>
                         <h2 className="about-heading">{heading}<span className="lightblue-h2">{headinglightblue}</span>{heading2}</h2>
                         <p className="design-process-description">{description}</p>
-                        {/* <div>
-                            <button className="header-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
-                        </div> */}
+                        <div>
+                            <button className="getstarted-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
+                        </div>
                     </div>
 
                     {/* Right Column: Image or Text based on reverseOrder */}

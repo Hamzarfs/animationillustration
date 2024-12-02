@@ -17,7 +17,7 @@ const AwardsLogo = () => {
         {/* Heading */}
         <div className="row text-center mb-4">
           <div className="col-12">
-            <h2>Award-Winning Logo Design Company</h2>
+            <h2 className='choose-service-heading font-weight-bold py-3'>Award-Winning Video Production Company in USA</h2>
           </div>
         </div>
 

@@ -20,7 +20,7 @@
   .design-process-description {
     font-size: 18px;
     color: #666;
-    margin-bottom: 40px;
+
   }
   
   @keyframes float {
@@ -61,6 +61,7 @@
 @media (max-width: 768px) {
   img.img-fluid.img-animate {
     height: 300px !important;
+    margin-top: 21px;
 }
 
 .image-right-banner {

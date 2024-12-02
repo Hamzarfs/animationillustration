@@ -68,6 +68,10 @@
   .secondformsec-btn:hover {
     background-color: #1591c4;
   }
+
+  .secondformsec-images.mb-3.d-flex.gap-3 {
+    place-items: center;
+}
   
   @media (max-width: 768px) {
     .secondformsec-images .secondformsec-small-logo {

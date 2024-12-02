@@ -7,7 +7,7 @@ const WhyChooseService = ({
   steps // Array of steps with image, alt text, title, and description
 }) => {
   return (
-<section id="choose-service-section" className="container  py-5">
+<section id="choose-service-section" className="container text-center py-4 mt-3">
   {/* First Row: Heading and Description */}
   <div className="row">
     <div className="col-12 text-center">
@@ -21,7 +21,7 @@ const WhyChooseService = ({
   {/* First Row: 3 Icon Boxes */}
   <div className="row mt-4">
     {steps.slice(0, 3).map((step, index) => (
-      <div className="col-lg-4 col-md-6 mb-4" key={index}>
+      <div className="col-lg-4 col-md-6" key={index}>
         <div className="choose-service-icon-box">
           <img src={step.image} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.title}</h5>
@@ -34,7 +34,7 @@ const WhyChooseService = ({
   {/* Second Row: 6 Icon Boxes */}
   <div className="row mt-4">
     {steps.slice(3, 9).map((step, index) => (
-      <div className="col-lg-4 col-md-4 mb-4" key={index}>
+      <div className="col-lg-4 col-md-4" key={index}>
         <div className="choose-service-icon-box">
           <img src={step.image} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.title}</h5>

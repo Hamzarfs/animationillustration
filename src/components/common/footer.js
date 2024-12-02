@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="row">
           
           {/* About Section with Logo */}
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4">
             <h5 className="footer-heading-sub">
             <Link to="/"> <img src={footer} alt="Animation Rush" style={{ maxWidth: '150px'}} /></Link>
             </h5>
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2">
             <h5 className="footer-heading">Quick Links</h5>
             <ul className="footer-links list-unstyled">
               <li><a href="/" className="text-light text-decoration-none">Home</a></li>
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           {/* Our Services Section */}
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2">
             <h5 className="footer-heading">Feature Links</h5>
             <ul className="footer-links list-unstyled">
             <li> <a href="/services" className="text-light text-decoration-none">Services</a></li>

@@ -83,34 +83,34 @@ const SecondFormSec = () => {
                             At Animation Rush, we understand how animation can help you visually and engagingly compile huge amounts of data into small, digestible messages. Our professional video production services include character-based animation, motion graphics, and whiteboard animation, among many others. Animation specialists working with our clients come up with unique styles that suit the clients' branding while considering their target audiences. Let us help you enhance your brand through innovative animation.
                         </p>
                         <div className="secondformsec-images mb-3 d-flex gap-3">
-                            <a href="https://trustpilot.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.trustpilot.com/review/animationrush.com" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={trust}
                                     alt="Trustpilot"
                                     className="secondformsec-small-logo"
                                 />
                             </a>
-                            <a href="https://clutch.co" target="_blank" rel="noopener noreferrer">
+                            <a href="https://clutch.co/profile/animation-rush" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={clutchicon}
                                     alt="Clutch"
                                     className="secondformsec-small-logo"
                                 />
                             </a>
-                            <a href="https://bark.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.bark.com/en/us/company/animation-rush/VVpEmy/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={bark}
                                     alt="Bark"
                                     className="secondformsec-small-logo"
                                 />
                             </a>
-                            <a href="https://bbb.org" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="https://bbb.org" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={accredited}
                                     alt="BBB"
                                     className="secondformsec-small-logo"
                                 />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 

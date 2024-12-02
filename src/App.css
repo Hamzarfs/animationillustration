@@ -136,6 +136,22 @@ img.animatedlogo {
   transform: scale(1.05); 
 }
 
+.getstarted-btn {
+  background-color: #215E89;
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px; 
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.getstarted:hover {
+  background-color: #042842; 
+  transform: scale(1.05); 
+}
+
 
 /* Footer Styles */
 .footer {
@@ -214,6 +230,19 @@ button.header-btn {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    text-align-last: center !important;
+}
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.d-flex.gap-3.mb-3 {
+  justify-content: center;
+}
   button.header-btn {
     margin-left: 0px;
   }

@@ -1,0 +1,97 @@
+/* Section Styles */
+.servicesslider {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .servicesslider .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .servicesslider .section-title .highlight {
+    color: #3CBEC8;
+  }
+  
+  .servicesslider .section-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  /* Swiper Styles */
+  .services-swiper {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 50px; /* Space for pagination */
+    height: 350px;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card .service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-card .service-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Swiper Navigation and Pagination */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333;
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjusts the position below the slider */
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #3CBEC8;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #215E89;
+    opacity: 1;
+    transform: scale(1.2); /* Slightly enlarge the active bullet */
+  }
+  

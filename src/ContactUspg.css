@@ -106,3 +106,9 @@
       background-color: #3BD2DC;
     }
     
+
+    @media (max-width: 768px) {
+    .contactuspg-info {
+      display: none;
+  }
+}
