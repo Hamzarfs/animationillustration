@@ -12,20 +12,21 @@
 
 .logo-animation-section ul {
     font-size: 1rem;
-    line-height: 1.8;
+    /* line-height: 1.8; */
     color: #333;
     margin: auto;
-    width: 85%;
+    width: 90%;
 }
 
-.logo-animation-section ul li {
+/* .logo-animation-section ul li {
     display: flex;
     align-items: center;
-}
+} */
 
 .logo-animation-section .fa-ul .fa-li {
     font-size: 8px;
     color: #3DD8E0;
+    top: 10px;
 }
 
 .logo-animation-section .right-column {

@@ -13,9 +13,7 @@ const CtaSection = () => {
                                 Kickstart your <span className="lightblue-h2">Video Animation</span> project today!
                          
                             </p>
-                            <NavLink to='/contact-us'>
-                                <a href="#" className="btn btn-primary unique-section-button px-sm-4 py-2 fw-semibold">Get a Quote</a>
-                            </NavLink>
+                            <a data-bs-toggle='modal' data-bs-target='#popupForm' className="btn btn-primary unique-section-button px-sm-4 py-2 fw-semibold">Get a Quote</a>
                         </div>
                     </div>
                 </div>
