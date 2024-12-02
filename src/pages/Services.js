@@ -28,35 +28,43 @@ const ServicesPage = () => {
 
     const slides = [
         {
-            title: 'Wireframe',
+            title: '2D Animation',
             img: sliderImg1,
         },
         {
-            title: 'App Design',
+            title: '3D Animation',
             img: sliderImg2,
         },
         {
-            title: 'App Development',
+            title: 'Explainer Video',
             img: sliderImg3,
         },
         {
-            title: 'Wireframe',
+            title: 'Motion Graphics',
             img: sliderImg1,
         },
         {
-            title: 'App Design',
+            title: 'Whiteboard Animation',
             img: sliderImg2,
         },
         {
-            title: 'App Development',
+            title: '3D Architecture Animation',
             img: sliderImg3,
+        },
+        {
+            title: 'Logo Animation',
+            img: sliderImg1,
+        },
+        {
+            title: 'Cartoon Animation',
+            img: sliderImg2,
         },
     ]
 
     const heroSection = {
         title: 'Services',
         image: heroBgImg,
-        subtitle: 'kimono photography Agency runs wide and deep. Across many markets, geographies typologies, our team members'
+        subtitle: 'Captivate your audience with our creative and engaging videos. We bring your vision to life, crafting videos that inform, persuade, and inspire.'
     }
 
     const faqs = [
@@ -92,14 +100,14 @@ const ServicesPage = () => {
 
             <Header />
 
-            <HeroSection 
-            {...heroSection} />
+            <HeroSection
+                {...heroSection} />
 
             <section className="services-we-deliver py-5 position-relative">
                 <div className="container">
                     <div className="text-center">
-                        <h1>Service We Deliver</h1>
-                        <p className="description">We stay ahead of the curve, using the latest tools and technologies to deliver high-performance apps.</p>
+                        <h1>Services We Deliver</h1>
+                        <p className="description">We offer a wide range of animation services to meet your unique needs.</p>
                     </div>
 
                     <div className="mx-sm-5">
@@ -144,12 +152,12 @@ const ServicesPage = () => {
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
                                         <div className="icon">
-                                            <img src={approachSecIcon1} alt="Animate Your Brand" />
+                                            <img src={approachSecIcon1} alt="Innovation combined with engagement" />
                                         </div>
-                                        <h5 className="card-title">Animate Your Brand</h5>
+                                        <h5 className="card-title">Innovation combined with engagement</h5>
                                     </div>
                                     <p className="card-text">
-                                        We bring your ideas to life with cutting-edge app design and development. Our mission is to create user-centric, innovative, and scalable solutions that help businesses thrive in the digital age.
+                                        We craft captivating animations that move audiences, combining creativity and technology with the passion of our talented animators to deliver engaging content.
                                     </p>
                                 </div>
                             </div>
@@ -159,12 +167,12 @@ const ServicesPage = () => {
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
                                         <div className="icon">
-                                            <img src={approachSecIcon2} alt="Slick and Smart" />
+                                            <img src={approachSecIcon2} alt="Client-driven Partnership" />
                                         </div>
-                                        <h5 className="card-title">Slick and Smart</h5>
+                                        <h5 className="card-title">Client-driven Partnership</h5>
                                     </div>
                                     <p className="card-text">
-                                        We bring your ideas to life with cutting-edge app design and development. Our mission is to create user-centric, innovative, and scalable solutions that help businesses thrive in the digital age.
+                                        We prioritize your vision, working closely with you to ensure satisfaction. We are dedicated to delivering high-quality animations on time and within budget.
                                     </p>
                                 </div>
                             </div>
@@ -174,12 +182,12 @@ const ServicesPage = () => {
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
                                         <div className="icon">
-                                            <img src={approachSecIcon3} alt="Unleash The Potential" />
+                                            <img src={approachSecIcon3} alt="State-of-the-art Technology" />
                                         </div>
-                                        <h5 className="card-title">Unleash The Potential</h5>
+                                        <h5 className="card-title">State-of-the-art Technology</h5>
                                     </div>
                                     <p className="card-text">
-                                        We bring your ideas to life with cutting-edge app design and development. Our mission is to create user-centric, innovative, and scalable solutions that help businesses thrive in the digital age.
+                                        We are always forward-looking concerning the newest animation tools and techniques, which our top-notch facility uses to produce dazzling visuals and exceptional results.
                                     </p>
                                 </div>
                             </div>
@@ -189,12 +197,12 @@ const ServicesPage = () => {
                                 <div className="card-body">
                                     <div className="d-flex gap-3 align-items-center">
                                         <div className="icon">
-                                            <img src={approachSecIcon4} alt="The Right Path People" />
+                                            <img src={approachSecIcon4} alt="Quality Assurance" />
                                         </div>
-                                        <h5 className="card-title">The Right Path People</h5>
+                                        <h5 className="card-title">Quality Assurance</h5>
                                     </div>
                                     <p className="card-text">
-                                        We bring your ideas to life with cutting-edge app design and development. Our mission is to create user-centric, innovative, and scalable solutions that help businesses thrive in the digital age.
+                                        We take pride in delivering the maximum quality animations. Each project goes through a tough quality control system to ensure it passes out at-times very varied and excessive standards.
                                     </p>
                                 </div>
                             </div>
@@ -210,20 +218,20 @@ const ServicesPage = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="d-flex align-items-center justify-content-center h-100">
-                                <img src={approachSecImg} alt="Our Approach to Excellence" className="img-fluid" />
+                                <img src={approachSecImg} alt="Our Production Process" className="img-fluid" />
                             </div>
                         </div>
 
                         <div className="col-lg-6 second-column">
                             <div className="d-flex align-items-center h-100">
                                 <div>
-                                    <h2 className="display-5 fw-semibold">Our Approach to Excellence</h2>
+                                    <h2 className="display-5 fw-semibold">Our Production Process</h2>
 
-                                    <p className="">Creating a fictional world is an art, and our expert writers are here to help you perfect it. Whether you have a plot, characters,  just a concept, we transform your vision into a compelling and professionally</p>
+                                    <p className="">We start the entire process from understanding your vision and goals with a detailed consultation. Then, we make a comprehensive plan that includes storyboarding, scriptwriting, and style guides. Our richly talented animators animate your vision using top-notch illustrative techniques and software.</p>
 
-                                    <p className="">Creating a fictional world is an art, and our expert ghostwriters are here to help you perfect it. Whether you have a plot, characters just a concept.</p>
+                                    <p className="">We also make it sound professional with appropriate sound design and music. Finally, it all comes together after meticulous post-production and is delivered to you on time. We are ready to do anything to produce outstanding results and exceed your expectations.</p>
 
-                                    <a href="#" className="btn btn-primary unique-section-button px-4 py-2">Get a Quote</a>
+                                    <button data-bs-toggle='modal' data-bs-target='#popupForm' className="btn btn-primary unique-section-button px-4 py-2">Get a Quote</button>
 
                                 </div>
                             </div>

@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
-import { FaUser, FaEnvelope, FaPhone, FaCommentAlt, FaTimes } from 'react-icons/fa'; // Font Awesome icons
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import '../../styles/PopupForm.css'
 
-Modal.setAppElement("#root");
 
-const PopupForm1 = ({ isOpen, closeModal }) => {
+const PopupForm = () => {
     const navigate = useNavigate()
     const [loading, setLoading] = useState(false); // Loading state
     const [formData, setFormData] = useState({
@@ -14,18 +12,30 @@ const PopupForm1 = ({ isOpen, closeModal }) => {
         email: "",
         phone: "",
         message: "",
-        // newsletter: false,
     });
+
+    // Handle form input changes
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
             phoneRegex = /^\+1\d{10}$/
 
         if (!emailRegex.test(formData.email))
-            Swal.fire('Error', 'Invalid email address', 'error')
-        
+            document.querySelector('#popupForm input[name=email]').classList.add('is-invalid')
+        else
+            document.querySelector('#popupForm input[name=email]').classList.remove('is-invalid')
+
         if (!phoneRegex.test(formData.phone))
-            Swal.fire('Error', 'Invalid Phone number. Example: +19876543210', 'error')
+            document.querySelector('#popupForm input[name=phone]').classList.add('is-invalid');
+        else
+            document.querySelector('#popupForm input[name=phone]').classList.remove('is-invalid');
 
         return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
     }
@@ -39,12 +49,13 @@ const PopupForm1 = ({ isOpen, closeModal }) => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090/popup-email.php'*/"https://amzbookpublishing.net/PHPMailer/popup-email.php", {
+        await fetch(/*'http://localhost:9090/popup-email.php'*/"https://animationrush.com/php_mailer/popup.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
             .then(r => r.json())
             .then(({ success, message }) => {
+                document.querySelector('button[data-bs-dismiss]').click()
                 setLoading(false)
                 if (success)
                     navigate('/thank-you')
@@ -54,83 +65,54 @@ const PopupForm1 = ({ isOpen, closeModal }) => {
     }
 
     return (
-        <Modal
-            isOpen={isOpen}
-            onRequestClose={closeModal}
-            contentLabel="Popup Form"
-            className="popupform1-modal"
-            overlayClassName="popupform1-overlay"
-        >
-            <button className="close-button" onClick={closeModal}>
-                <FaTimes />
-            </button>
-            <form className="popupform1" onSubmit={handleSubmit}>
-                <h2>Get a <span style={{ color: '#F76C39' }}>Quote</span></h2>
-                <div>
-                    <label>Name</label>
-                    <div className="input-icon">
-                        <FaUser className="icon" />
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="e.g. John Doe"
-                            value={formData.name}
-                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        />
+        <div className="modal fade" id="popupForm" tabIndex="-1">
+            <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                    <div className="modal-header border-0">
+                        <h4 className="modal-title">Get a free Quote</h4>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div className="modal-body pt-0">
+                        <form method='POST' onSubmit={handleSubmit}>
+                            <input type='hidden' name='title' value={formData.title} />
+                            <div className="mb-3">
+                                <label htmlFor="name" className="form-label">Full name</label>
+                                <input type="text" className="form-control" id="name" placeholder="John Doe" name='name' value={formData.name} onChange={handleChange} required />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="email" className="form-label">Email address</label>
+                                <input type="email" className="form-control" id="email" placeholder="example@test.com" name='email' value={formData.email} onChange={handleChange} required />
+                                <div className="invalid-feedback">
+                                    Invalid Email address
+                                </div>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="phone" className="form-label">Phone number</label>
+                                <input type="tel" className="form-control" id="phone" placeholder="1234567890" name='phone' value={formData.phone} onChange={handleChange} required />
+                                <div className="invalid-feedback">
+                                    Invalid Phone number. Example: +19876543210
+                                </div>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="message" className="form-label">Message</label>
+                                <textarea className="form-control" id="message" placeholder="Your message..." rows="5" name='message' onChange={handleChange} value={formData.message} required></textarea>
+                            </div>
+                            <div className="d-grid mb-3">
+                                <button type='submit' className='btn py-2' disabled={loading}>
+                                    {loading ? (
+                                        <>
+                                            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                            <span role="status">Submitting...</span>
+                                        </>
+                                    ) : 'Submit'}
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div>
-                    <label>Email</label>
-                    <div className="input-icon">
-                        <FaEnvelope className="icon" />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="e.g. john@example.com"
-                            value={formData.email}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        />
-                    </div>
-                </div>
-                <div>
-                    <label>Phone Number</label>
-                    <div className="input-icon">
-                        <FaPhone className="icon" />
-                        <input
-                            type="tel"
-                            name="phone"
-                            placeholder="e.g. 1234567890"
-                            value={formData.phonenumber}
-                            onChange={(e) =>
-                                setFormData({ ...formData, phone: e.target.value })
-                            }
-                        />
-                    </div>
-                </div>
-                <div>
-                    <label>Message</label>
-                    <div className="input-icon">
-                        <FaCommentAlt className="icon" />
-                        <textarea
-                            placeholder="Your message here"
-                            value={formData.message}
-                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                            style={{ resize: 'none' }}
-                        />
-                    </div>
-                </div>
-
-                <button type="submit" disabled={loading}>
-                    {loading ? (
-                        <>
-                            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
-                            <span role="status">Submitting...</span>
-                        </>
-                    ) : 'Submit Now'}
-                </button>
-            </form>
-        </Modal>
+            </div>
+        </div>
     );
 };
 
-export default PopupForm1;
+export default PopupForm;

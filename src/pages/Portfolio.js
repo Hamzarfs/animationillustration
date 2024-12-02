@@ -85,7 +85,7 @@ const Portfolio = () => {
 
             <Header />
 
-            <HeroSection image={heroBgImg} title='Portfolio' subtitle='kimono photography Agency runs wide and deep. Across many markets, geographies typologies, our team members' />
+            <HeroSection image={heroBgImg} title='Portfolio' subtitle='Our portfolio reflects our dedication to creativity and innovation. It showcases a diverse range of projects, from captivating 2D designs to immersive 3D experiences.' />
 
             <section className="logo-grid-section py-5">
                 <div className="container">

@@ -11,9 +11,7 @@ const HeroSection = ({ image, title, subtitle }) => {
                 <div>
                     <h1 className="display-4 fw-semibold">{title}</h1>
                     <p className="lead mx-auto">{subtitle}</p>
-                    <NavLink to='/contact-us'>
-                        <a className="btn custom-btn">Get Started</a>
-                    </NavLink>
+                    <button data-bs-toggle='modal' data-bs-target='#popupForm' className="btn custom-btn">Get Started</button>
                 </div>
             </div>
         </section>

@@ -27,12 +27,13 @@ const Banner = ({ subheading, heroTitle, description, buttonText, buttonLink, ba
                                     {heroTitle}
                                 </h1>
                                 <p className="banner-description">{description}</p>
-                                <a
-                                    href={buttonLink}
+                                <button
+                                    data-bs-toggle='modal'
+                                    data-bs-target='#popupForm'
                                     className="banner-cta-button "
                                 >
                                     {buttonText}
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>

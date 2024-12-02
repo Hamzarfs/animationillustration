@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-// import { Helmet } from 'react-helmet-async';
 import Header from '../components/common/header';
 import '../App.css'
-import BannerSection from '../components/common/banner';
 import bannerImage from '../images/IllustrationBanner.webp';
 import whyservice1 from '../images/whyservice1.gif';
 import whyservice2 from '../images/whyservice2.gif';
@@ -23,7 +20,6 @@ import AwardsLogo from '../components/common/awardslogo';
 import WhyChooseService from '../components/Home/whychooseservice';
 import CtaSection from '../components/common/ctasection';
 import ImageRightBanner from '../components/common/ImageRightbanner';
-
 import PortfolioGallery from '../components/Home/homeportfolio';
 import CustomServices from '../components/Home/customservice';
 import TrackRecord from '../components/Home/trackrecord';
@@ -158,7 +154,7 @@ const Home = () => {
                 heroTitle="Professional Video Production Company Your Vision, Our Expertise"
                 description="As a creative video production company, we shape bright and beautiful developing videos. Our team of exemplary professionals will bring your ideas from concept to completion. Whether commercial, explanatory, or brand-film cinematic, we got it for you."
                 buttonText="Get Started"
-                buttonLink="/contact-us" // Replace with your actual link
+                // buttonLink="/contact-us" // Replace with your actual link
                 backgroundImage={bannerImage} // Provide the background image URL
             />
             <SecondFormSec />
@@ -201,6 +197,7 @@ const Home = () => {
             <CommitmentClient />
             <FAQSection faqs={faqs} image={faqimg} />
             <Footer />
+
 
         </div>
     );

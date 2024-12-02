@@ -1,21 +1,9 @@
 import React, { useState } from 'react';
 import animationlogo from '../../images/animatedlogo.gif';
 import { NavLink } from 'react-router-dom';  // Change Link to NavLink
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // For JS functionality (hamburger)
-// import PopupForm1 from '../common/PopupForm';
+import PopupForm from './PopupForm';
 
 const Header = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal
-
-    const openModal = () => {
-        setIsModalOpen(true); // Open the modal
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false); // Close the modal
-    };
-
     return (
         <section id="header">
             <nav className="navbar navbar-expand-xl bg-body-tertiary">
@@ -41,9 +29,7 @@ const Header = () => {
                             <li className="nav-item">
                                 <NavLink
                                     to="/"
-                                    // exact
                                     className="nav-link"
-                                // activeClassName="active-link"  // This will add the class "active-link"
                                 >
                                     Home
                                 </NavLink>
@@ -52,7 +38,6 @@ const Header = () => {
                                 <NavLink
                                     to="/about-us"
                                     className="nav-link"
-                                // activeClassName="active-link"
                                 >
                                     About Us
                                 </NavLink>
@@ -61,7 +46,6 @@ const Header = () => {
                                 <NavLink
                                     to="/services"
                                     className="nav-link"
-                                // activeClassName="active-link"
                                 >
                                     Services
                                 </NavLink>
@@ -70,7 +54,6 @@ const Header = () => {
                                 <NavLink
                                     to="/our-process"
                                     className="nav-link"
-                                // activeClassName="active-link"
                                 >
                                     Our Process
                                 </NavLink>
@@ -79,7 +62,6 @@ const Header = () => {
                                 <NavLink
                                     to="/portfolio"
                                     className="nav-link"
-                                // activeClassName="active-link"
                                 >
                                     Portfolio
                                 </NavLink>
@@ -88,7 +70,6 @@ const Header = () => {
                                 <NavLink
                                     to="/contact-us"
                                     className="nav-link"
-                                // activeClassName="active-link"
                                 >
                                     Contact Us
                                 </NavLink>
@@ -96,16 +77,14 @@ const Header = () => {
                         </ul>
 
                         {/* Right-aligned button */}
-                        <NavLink to='/contact-us'>
-                            <button onClick={openModal} className="header-btn" style={{ cursor: 'pointer' }}>
-                                Get a Quote
-                            </button>
-                        </NavLink>
-
-                        {/* <PopupForm1 isOpen={isModalOpen} closeModal={closeModal} /> */}
+                        <button data-bs-toggle='modal' data-bs-target="#popupForm" className="header-btn" style={{ cursor: 'pointer' }}>
+                            Get a Quote
+                        </button>
                     </div>
                 </div>
             </nav>
+
+            <PopupForm />
         </section>
     );
 };
