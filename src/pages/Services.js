@@ -106,7 +106,7 @@ const ServicesPage = () => {
             <section className="services-we-deliver py-5 position-relative">
                 <div className="container">
                     <div className="text-center">
-                        <h1>Services We Deliver</h1>
+                        <h2>Services We Deliver</h2>
                         <p className="description">We offer a wide range of animation services to meet your unique needs.</p>
                     </div>
 
@@ -145,7 +145,7 @@ const ServicesPage = () => {
 
             <section className="approach-section py-5">
                 <div className="container">
-                    <h1 className="text-center mb-5 display-3 fw-semibold">Our Approach to Excellence</h1>
+                    <h2 className="text-center mb-5 display-3 fw-semibold">Our Approach to Excellence</h2>
                     <div className="row g-4">
                         <div className="col-xl-3 col-md-6 approach-card">
                             <div className="custom-card">

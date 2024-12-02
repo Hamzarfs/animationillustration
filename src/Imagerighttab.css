@@ -24,6 +24,7 @@
     margin-top: 1rem;
     font-size: 1rem;
     color: #555;
+    text-align: justify;
   }
   
   /* Tabs Styling */
@@ -73,10 +74,22 @@
     margin-top: 1rem;
     font-size: 1rem;
     color: #555;
+    text-align: justify;
   }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  img.img-fluid.img-animate {
+    height: 300px !important;
+    margin-top: 21px;
+}
+
+.imagelefttab-image {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 510px;
+  display: none;
+}
 
     .page-hading {
       height: 400px !important;
@@ -90,7 +103,7 @@
     }
   
     .imagelefttab-tabs {
-      flex-direction: column;
+     
       gap: 1rem;
     }
   

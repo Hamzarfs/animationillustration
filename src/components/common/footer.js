@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                     {/* Our Services Section */}
                     <div className="col-md-2 mb-4">
-                        <h5 className="footer-heading">Feature Links</h5>
+                        <h5 className="footer-heading">Other Links</h5>
                         <ul className="footer-links list-unstyled">
                             <li> <a href="/services" className="text-light text-decoration-none">Services</a></li>
                             <li> <a href="/terms-conditions" className="text-light text-decoration-none">Terms & Condition</a></li>

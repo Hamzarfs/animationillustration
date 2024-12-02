@@ -12,7 +12,7 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
                         <h2 className="about-heading">{heading}<span className="lightblue-h2">{headinglightblue}</span>{heading2}</h2>
                         <p className="design-process-description">{description}</p>
                         <div>
-                            <button className="getstarted-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
+                            <button className="getstarted-btn" data-bs-toggle="modal" data-bs-target="#popupForm" >Get Started</button>
                         </div>
                     </div>
 

@@ -7,7 +7,7 @@ const AboutService = ({
   customservicesteps // Array of steps with image, alt text, title, and description
 }) => {
   return (
-<section id="choose-service-section" className="container  py-5">
+<section id="choose-service-section" className="container py-5">
   {/* First Row: Heading and Description */}
   <div className="row">
     <div className="col-12 text-center">

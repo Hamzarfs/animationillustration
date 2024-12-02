@@ -5,7 +5,7 @@ import Footer from '../components/common/footer';
 import ContactUsform from '../components/Contactus/contactus';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '../components/common/HeroSection';
-import heroBgImg from '../images/aboutusbanner.png'
+import heroBgImg from '../images/contacus.webp'
 
 const Contactus = () => {
     const heroSection = {

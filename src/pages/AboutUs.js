@@ -18,6 +18,8 @@ import appvalues4 from '../images/Appvalues4.png';
 import AboutService from '../Aboutus/aboutservice';
 import HeroSection from '../components/common/HeroSection';
 import heroBgImg from '../images/aboutusbanner.png'
+import AboutServicesSlider from '../Aboutus/aboutserviceslider';
+import ServicesSlider from '../components/Services/Serviceslider';
 
 const About = () => {
 
@@ -117,11 +119,12 @@ const About = () => {
             <ImageLeftTab
                 imageleft={aboutus2}
             />
-            <AboutService
+            {/* <AboutService
                 customserviceheading={customserviceheading}
                 customservicedescription={customservicedescription}
                 customservicesteps={customservicesteps}
-            />
+            /> */}
+            <ServicesSlider/>
 
             <CtaSection />
 

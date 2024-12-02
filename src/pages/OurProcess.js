@@ -7,7 +7,7 @@ import StepSection from '../components/common/Steps';
 import { Helmet } from 'react-helmet-async';
 import FAQSection from '../components/common/faqsection';
 import faqimg from '../images/faqimg.gif';
-import heroBgImg from '../images/aboutusbanner.png'
+import heroBgImg from '../images/OurProces.webp'
 import HeroSection from '../components/common/HeroSection';
 
 const OurProcess = () => {

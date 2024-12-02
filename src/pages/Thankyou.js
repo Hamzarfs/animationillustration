@@ -26,7 +26,7 @@ const ThankYou = () => {
                     guide you through the next steps.
                 </p>
                 <p>
-                    Having trouble? <a href="tel:+02045112054">Contact us</a>
+                    Having trouble? <a href="tel:+15515543283">Contact us</a>
                 </p>
                 <a className="banner-cta-button" href="/">
                     Back to homepage

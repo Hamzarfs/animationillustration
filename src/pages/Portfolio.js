@@ -8,24 +8,25 @@ import ContactUsSection from '../components/common/ContactUsSection';
 import LogoAnimationSection from '../components/common/LogoAnimationSection';
 import FAQSection from '../components/common/faqsection';
 import CtaSection from '../components/common/ctasection';
-import portfolioImg1 from '../images/portfolio/portfolio-1.png'
-import portfolioImg2 from '../images/portfolio/portfolio-2.png'
-import portfolioImg3 from '../images/portfolio/portfolio-3.png'
-import portfolioImg4 from '../images/portfolio/portfolio-4.png'
-import portfolioImg5 from '../images/portfolio/portfolio-5.png'
-import portfolioImg6 from '../images/portfolio/portfolio-6.png'
-import portfolioImg7 from '../images/portfolio/portfolio-7.png'
-import portfolioImg8 from '../images/portfolio/portfolio-8.png'
-import portfolioImg9 from '../images/portfolio/portfolio-9.png'
-import portfolioImg10 from '../images/portfolio/portfolio-10.png'
-import portfolioImg11 from '../images/portfolio/portfolio-11.png'
-import portfolioImg12 from '../images/portfolio/portfolio-12.png'
-import portfolioImg13 from '../images/portfolio/portfolio-13.png'
-import portfolioImg14 from '../images/portfolio/portfolio-14.png'
-import portfolioImg15 from '../images/portfolio/portfolio-15.png'
-import portfolioImg16 from '../images/portfolio/portfolio-16.png'
-import portfolioImg17 from '../images/portfolio/portfolio-17.png'
-import heroBgImg from '../images/services-banner.png'
+import portfolioImg1 from '../images/gallery5.gif'
+import portfolioImg2 from '../images/gallery4.gif'
+import portfolioImg3 from '../images/gallery3.gif'
+import portfolioImg4 from '../images/gallery2.gif'
+import portfolioImg5 from '../images/portfolio3.gif'
+import portfolioImg6 from '../images/gallery6.gif'
+import portfolioImg7 from '../images/gallery7.gif'
+import portfolioImg8 from '../images/gallery8.gif'
+import portfolioImg9 from '../images/gallery9.gif'
+import portfolioImg10 from '../images/gallery10.gif'
+import portfolioImg11 from '../images/gallery11.gif'
+import portfolioImg12 from '../images/gallery12.gif'
+import portfolioImg13 from '../images/portfolio1.gif'
+import portfolioImg14 from '../images/portfolio2.gif'
+import portfolioImg15 from '../images/portfolio4.gif'
+import portfolioImg16 from '../images/portfolio5.gif'
+import portfolioImg17 from '../images/portfolio6.gif'
+import portfolioImg18 from '../images/uniqueanimation.gif'
+import heroBgImg from '../images/Portfolio.webp'
 import faqbg from '../images/faqimg.gif'
 import { Box } from '@mui/material';
 import { Masonry } from '@mui/lab';
@@ -74,6 +75,7 @@ const Portfolio = () => {
         { image: portfolioImg15, alt: 'Anas, Eliyas & I' },
         { image: portfolioImg16, alt: 'Barratlantic LTD' },
         { image: portfolioImg17, alt: 'Apex Auto Detailing' },
+        { image: portfolioImg18, alt: 'Apex Auto Detailing' },
     ];
     return (
         <section className="portfolio-page">
@@ -89,7 +91,7 @@ const Portfolio = () => {
 
             <section className="logo-grid-section py-5">
                 <div className="container">
-                    <h2 className="text-center mb-4">Our Animation Development Process</h2>
+                    <h2 className="text-center mb-4">Let Our Work Do The Talking</h2>
                     <Box>
                         <Masonry columns={3} spacing={2}>
                             {logos.map((logo, index) => (

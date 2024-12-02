@@ -39,9 +39,10 @@ const SecondFormSec = () => {
         ) {
             newErrors.email = "Please enter a valid email address.";
         }
-        if (!formData.phone || !/^\d{10}$/.test(formData.phone)) {
-            newErrors.phone = "Phone must be a 10-digit number.";
+        if (!formData.phone || !/^\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}$/.test(formData.phone) || formData.phone.replace(/\D/g, '').length < 11 || formData.phone.replace(/\D/g, '').length > 15) {
+            newErrors.phone = "Invalid Phone Number";
         }
+        
         if (!formData.message || formData.message.trim() === "") {
             newErrors.message = "Message cannot be empty.";
         }

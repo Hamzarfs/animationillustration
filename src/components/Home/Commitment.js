@@ -41,10 +41,10 @@ const CommitmentClient = () => {
                 <div className="icon-box">
                   <img
                     src={whyservice2}
-                    alt="Increase Engagement:"
+                    alt="Increase Engagement"
                     className="icon-box-image"
                   />
-                  <h5 className="icon-box-title">Increase Engagement:</h5>
+                  <h5 className="icon-box-title">Increase Engagement</h5>
                   <p className="icon-box-text">
                   Video content is an impeccable mode of engagement for your audience. The video production services reproduce compelling videos for greater social media engagement, website traffic, and conversions.
                   </p>
