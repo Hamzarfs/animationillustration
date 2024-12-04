@@ -103,11 +103,11 @@ const ServicesPage = () => {
             <HeroSection
                 {...heroSection} />
 
-            <section className="services-we-deliver py-5 position-relative">
+            <section className="services-we-deliver py-4 position-relative">
                 <div className="container">
                     <div className="text-center">
-                        <h2>Services We Deliver</h2>
-                        <p className="description">We offer a wide range of animation services to meet your unique needs.</p>
+                        <h2 className="secondformsec-heading">Our Expertise</h2>
+                        <p className="secondformsec-description text-center">We offer a wide range of animation services to meet your unique needs.</p>
                     </div>
 
                     <div className="mx-sm-5">
@@ -133,7 +133,7 @@ const ServicesPage = () => {
                                 <SwiperSlide key={i}>
                                     <div className="services-slide">
                                         <img src={slide.img} alt={slide.title} className="img-fluid" />
-                                        <h3 className="mt-3 text-center">{slide.title}</h3>
+                                        <h3 className="secondformsec-description text-center mt-3 text-center">{slide.title}</h3>
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -143,9 +143,9 @@ const ServicesPage = () => {
                 </div>
             </section>
 
-            <section className="approach-section py-5">
+            <section className="approach-section py-4">
                 <div className="container">
-                    <h2 className="text-center mb-5 display-3 fw-semibold">Our Approach to Excellence</h2>
+                    <h2 className="secondformsec-heading text-center">Building Strong Partnerships Through Innovation and Quality</h2>
                     <div className="row g-4">
                         <div className="col-xl-3 col-md-6 approach-card">
                             <div className="custom-card">
@@ -213,7 +213,7 @@ const ServicesPage = () => {
 
             <CtaSection />
 
-            <section className="approach-section-2 py-5">
+            <section className="approach-section-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">

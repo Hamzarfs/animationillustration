@@ -3,7 +3,7 @@ import Header from '../components/common/header';
 import Footer from '../components/common/footer';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '../components/common/HeroSection';
-import '../styles/Portfolio.css'
+import '../styles/Portfolio.css';
 import ContactUsSection from '../components/common/ContactUsSection';
 import LogoAnimationSection from '../components/common/LogoAnimationSection';
 import FAQSection from '../components/common/faqsection';
