@@ -1,19 +1,14 @@
 import React, { useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "../../SecondFormSec.css";
-import clutchicon from "../../images/clutchicon.png"
-import trust from "../../images/trustpiloticon.png"
-import bark from "../../images/barkicon.png"
-import accredited from "../../images/accredited.png"
-import bgimgsecond from "../../images/bgblue.webp"
+import clutchicon from "../../images/clutchicon.png";
+import trust from "../../images/trustpiloticon.png";
+import bark from "../../images/barkicon.png";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const SecondFormSec = () => {
-    const navigate = useNavigate()
-
-    const [loading, setLoading] = useState(false)
-
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -21,52 +16,67 @@ const SecondFormSec = () => {
         message: "",
     });
 
-    const [errors, setErrors] = useState({});
-
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value })
+        setFormData({ ...formData, [name]: value });
     };
 
-    const validate = () => {
-        const newErrors = {};
-        if (!formData.name || /\d/.test(formData.name)) {
-            newErrors.name = "Name must not contain numbers or be empty.";
+    // PopupForm wali validation yahan add ki hai
+    const validateFormFields = (formFieldName = null) => {
+        let isValid;
+        const regexes = {
+            name: /^[A-Za-z\s]{1,50}$/,
+         
+            // email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            email: /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/,
+
+            phone: /^\+?\d{10,15}$/,
+            message: /^(?!\s+$)[^\s].{0,1999}$/,
+        };
+
+        if (formFieldName) {
+            isValid = regexes[formFieldName].test(formData[formFieldName]);
+            const element = document.querySelector(`#secondForm [name=${formFieldName}]`);
+            if (element) {
+                element.classList.toggle('is-invalid', !isValid);
+            }
+        } else {
+            let allValid = true;
+            for (const key in regexes) {
+                const isValidField = regexes[key].test(formData[key]);
+                const element = document.querySelector(`#secondForm [name=${key}]`);
+                if (element) {
+                    element.classList.toggle('is-invalid', !isValidField);
+                }
+                if (!isValidField) allValid = false;
+            }
+            return allValid;
         }
-        if (
-            !formData.email ||
-            !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
-        ) {
-            newErrors.email = "Please enter a valid email address.";
-        }
-        if (!formData.phone || !/^\(?\d{1,4}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}$/.test(formData.phone) || formData.phone.replace(/\D/g, '').length < 11 || formData.phone.replace(/\D/g, '').length > 15) {
-            newErrors.phone = "Invalid Phone Number";
-        }
-        
-        if (!formData.message || formData.message.trim() === "") {
-            newErrors.message = "Message cannot be empty.";
-        }
-        return newErrors;
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const formErrors = validate();
-        setErrors(formErrors);
-        if (Object.keys(formErrors).length === 0) {
-            setLoading(true)
-            await fetch("https://animationrush.com/php_mailer/index.php", {
+
+        // PopupForm jaisi validation check
+        if (!validateFormFields()) return;
+
+        setLoading(true);
+        try {
+            const response = await fetch("https://animationrush.com/php_mailer/index.php", {
                 method: 'POST',
                 body: JSON.stringify(formData)
-            })
-                .then(r => r.json())
-                .then(({ success, message }) => {
-                    setLoading(false)
-                    if (success)
-                        navigate('/thank-you')
-                    else
-                        Swal.fire('Error', message, 'error')
-                })
+            });
+            const data = await response.json();
+            setLoading(false);
+            
+            if (data.success) {
+                navigate('/thank-you');
+            } else {
+                Swal.fire('Error', data.message, 'error');
+            }
+        } catch (error) {
+            setLoading(false);
+            Swal.fire('Error', 'An error occurred while submitting the form.', 'error');
         }
     };
 
@@ -105,19 +115,17 @@ const SecondFormSec = () => {
                                     className="secondformsec-small-logo"
                                 />
                             </a>
-                            {/* <a href="https://bbb.org" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src={accredited}
-                                    alt="BBB"
-                                    className="secondformsec-small-logo"
-                                />
-                            </a> */}
                         </div>
                     </div>
 
                     {/* Right Column */}
                     <div className="col-lg-6 col-md-12">
-                        <form className="secondformsec-form p-4" onSubmit={handleSubmit} method="POST">
+                        <form 
+                            className="secondformsec-form p-4" 
+                            onSubmit={handleSubmit} 
+                            method="POST"
+                            id="secondForm" // ID add kiya hai
+                        >
                             <h3 className="secondformsec-form-title">Let's Talk About Your Project</h3>
                             <div className="mb-3">
                                 <input
@@ -127,8 +135,14 @@ const SecondFormSec = () => {
                                     className="form-control secondformsec-input"
                                     value={formData.name}
                                     onChange={handleChange}
+                                    onInput={() => validateFormFields('name')}
+                                    maxLength="52"
+                                    required
                                 />
-                                {errors.name && <small className="secondformsec-error">{errors.name}</small>}
+                                {/* PopupForm jaisa invalid feedback */}
+                                <div className="invalid-feedback">
+                                    Not allowed more than 50 characters and it must be alphabetic
+                                </div>
                             </div>
                             <div className="mb-3">
                                 <input
@@ -138,8 +152,12 @@ const SecondFormSec = () => {
                                     className="form-control secondformsec-input"
                                     value={formData.email}
                                     onChange={handleChange}
+                                    onInput={() => validateFormFields('email')}
+                                    required
                                 />
-                                {errors.email && <small className="secondformsec-error">{errors.email}</small>}
+                                <div className="invalid-feedback">
+                                    Invalid Email address
+                                </div>
                             </div>
                             <div className="mb-3">
                                 <input
@@ -149,8 +167,13 @@ const SecondFormSec = () => {
                                     className="form-control secondformsec-input"
                                     value={formData.phone}
                                     onChange={handleChange}
+                                    onInput={() => validateFormFields('phone')}
+                                     maxLength="16"
+                                    required
                                 />
-                                {errors.phone && <small className="secondformsec-error">{errors.phone}</small>}
+                                <div className="invalid-feedback">
+                                    Invalid Phone number. Example: +19876543210
+                                </div>
                             </div>
                             <div className="mb-3">
                                 <textarea
@@ -160,8 +183,13 @@ const SecondFormSec = () => {
                                     rows="4"
                                     value={formData.message}
                                     onChange={handleChange}
+                                    onInput={() => validateFormFields('message')}
+                                    required
+                                    maxLength="2002"
                                 ></textarea>
-                                {errors.message && <small className="secondformsec-error">{errors.message}</small>}
+                                <div className="invalid-feedback">
+                                    Whitespaces are not allowed in beginning & message should not be more than 2000 characters.
+                                </div>
                             </div>
                             <button type="submit" className="btn secondformsec-btn w-100" disabled={loading}>
                                 {loading ? (

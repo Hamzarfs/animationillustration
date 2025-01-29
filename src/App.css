@@ -229,6 +229,34 @@ button.header-btn {
   margin-left: 30px;
 }
 
+/* Footer responsive adjustments */
+@media (max-width: 768px) {
+  .footer .row > div {
+      margin-bottom: 1.5rem;
+  }
+  
+  .footer-links li {
+      margin-bottom: 0.5rem;
+  }
+  
+  .footer-heading {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .row > div {
+      text-align: center;
+  }
+  
+  .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     text-align-last: center !important;
