@@ -257,7 +257,7 @@ button.header-btn {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     text-align-last: center !important;
 }

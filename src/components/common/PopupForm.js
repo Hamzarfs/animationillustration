@@ -27,7 +27,7 @@ const PopupForm = () => {
         const regexes = {
             name: /^[A-Za-z][A-Za-z\s]{0,49}$/,
             email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phone: /^\+?\d{10,15}$/,
+            phone: /^\+?[0-9-]{10,15}$/,
             message: /^.{1,2000}$/,
         }
 
@@ -91,7 +91,7 @@ const PopupForm = () => {
                         <form method='POST' onSubmit={handleSubmit}>
                             <input type='hidden' name='title' value={formData.title} />
                             <div className="mb-3">
-                                <label htmlFor="name" className="form-label">Full name</label>
+                                <label htmlFor="name" className="form-label">Full name*</label>
                                 <input 
                                     type="text" 
                                     className="form-control focus-ring focus-ring-success" 
@@ -109,7 +109,7 @@ const PopupForm = () => {
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="email" className="form-label">Email address</label>
+                                <label htmlFor="email" className="form-label">Email address*</label>
                                 <input 
                                     type="email" 
                                     className="form-control focus-ring focus-ring-success" 
@@ -126,7 +126,7 @@ const PopupForm = () => {
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="phone" className="form-label">Phone number</label>
+                                <label htmlFor="phone" className="form-label">Phone number*</label>
                                 <input 
                                     type="tel" 
                                     className="form-control focus-ring focus-ring-success" 
@@ -136,15 +136,16 @@ const PopupForm = () => {
                                     value={formData.phone} 
                                     onChange={handleChange} 
                                     required 
+                                    pattern="\+?[0-9-]{10,15}"
                                      maxLength="16"
                                     onInput={() => validateFormFields('phone')} 
                                 />
                                 <div className="invalid-feedback">
-                                    Invalid Phone number. Example: +19876543210
+                                Please enter a valid phone number (between 10 and 15 digits, optional '+').
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="message" className="form-label">Message</label>
+                                <label htmlFor="message" className="form-label">Message*</label>
                                 <textarea 
                                     className="form-control focus-ring focus-ring-success" 
                                     id="message" 

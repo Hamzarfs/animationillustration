@@ -140,7 +140,7 @@ const ContactUsform = () => {
                                             onChange={handleChange} 
                                             value={formData.firstName} 
                                             name='firstName' 
-                                            placeholder="First Name" 
+                                            placeholder="First Name*" 
                                             required 
                                             maxLength="52"
                                             onInput={() => validateFormFields('firstName')}
@@ -156,7 +156,7 @@ const ContactUsform = () => {
                                             onChange={handleChange} 
                                             value={formData.lastName} 
                                             name='lastName' 
-                                            placeholder="Last Name" 
+                                            placeholder="Last Name*" 
                                             required 
                                             maxLength="52"
                                             onInput={() => validateFormFields('lastName')}
@@ -174,7 +174,7 @@ const ContactUsform = () => {
                                             onChange={handleChange} 
                                             value={formData.email} 
                                             name='email' 
-                                            placeholder="Email" 
+                                            placeholder="Email*" 
                                             required 
                                             onInput={() => validateFormFields('email')}
                                         />
@@ -189,7 +189,7 @@ const ContactUsform = () => {
                                             onChange={handleChange} 
                                             value={formData.phone} 
                                             name='phone' 
-                                            placeholder="Phone Number" 
+                                            placeholder="Phone Number*" 
                                              maxLength="16"
                                             required 
                                             onInput={() => validateFormFields('phone')}
@@ -209,7 +209,7 @@ const ContactUsform = () => {
                                         onChange={handleChange} 
                                         value={formData.message} 
                                         name='message' 
-                                        placeholder="Message" 
+                                        placeholder="Message*" 
                                         required 
                                         maxLength="2002"
                                         onInput={() => validateFormFields('message')}

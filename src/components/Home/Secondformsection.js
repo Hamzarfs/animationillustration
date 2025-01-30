@@ -131,7 +131,7 @@ const SecondFormSec = () => {
                                 <input
                                     type="text"
                                     name="name"
-                                    placeholder="Enter your name"
+                                    placeholder="Enter your name*"
                                     className="form-control secondformsec-input"
                                     value={formData.name}
                                     onChange={handleChange}
@@ -148,7 +148,7 @@ const SecondFormSec = () => {
                                 <input
                                     type="email"
                                     name="email"
-                                    placeholder="Enter your email"
+                                    placeholder="Enter your email*"
                                     className="form-control secondformsec-input"
                                     value={formData.email}
                                     onChange={handleChange}
@@ -163,7 +163,7 @@ const SecondFormSec = () => {
                                 <input
                                     type="tel"
                                     name="phone"
-                                    placeholder="Enter your phone number"
+                                    placeholder="Enter your phone number*"
                                     className="form-control secondformsec-input"
                                     value={formData.phone}
                                     onChange={handleChange}
@@ -178,7 +178,7 @@ const SecondFormSec = () => {
                             <div className="mb-3">
                                 <textarea
                                     name="message"
-                                    placeholder="Enter your message"
+                                    placeholder="Enter your message*"
                                     className="form-control secondformsec-input"
                                     rows="4"
                                     value={formData.message}

@@ -13,7 +13,11 @@ import TermsConditions from './pages/Termscondition';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ThankYou from './pages/Thankyou';
 import Portfolio from './pages/Portfolio';
+import BlogPage from './pages/Blog';
+import BlogsPage from './pages/Blogs';
 
+// <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
 const App = () => {
     return (
         <HelmetProvider>
@@ -28,6 +32,8 @@ const App = () => {
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/thank-you" element={<ThankYou />} />
                     <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/:slug" element={<BlogPage />} />
+                    <Route path="/blogs" element={<BlogsPage />} />
                 </Routes>
             </Router>
         </HelmetProvider>
