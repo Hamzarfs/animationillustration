@@ -143,7 +143,7 @@ const ContactUsform = () => {
                                             placeholder="First Name*" 
                                             required 
                                             maxLength="52"
-                                            onInput={() => validateFormFields('firstName')}
+                                            onKeyUp={() => validateFormFields('firstName')}
                                         />
                                         <div className="invalid-feedback">
                                             Not allowed more than 50 characters and it must be alphabetic
@@ -159,7 +159,7 @@ const ContactUsform = () => {
                                             placeholder="Last Name*" 
                                             required 
                                             maxLength="52"
-                                            onInput={() => validateFormFields('lastName')}
+                                            onKeyUp={() => validateFormFields('lastName')}
                                         />
                                         <div className="invalid-feedback">
                                             Not allowed more than 50 characters and it must be alphabetic
@@ -176,7 +176,7 @@ const ContactUsform = () => {
                                             name='email' 
                                             placeholder="Email*" 
                                             required 
-                                            onInput={() => validateFormFields('email')}
+                                            onKeyUp={() => validateFormFields('email')}
                                         />
                                         <div className="invalid-feedback">
                                             Invalid Email address
@@ -192,7 +192,7 @@ const ContactUsform = () => {
                                             placeholder="Phone Number*" 
                                              maxLength="16"
                                             required 
-                                            onInput={() => validateFormFields('phone')}
+                                            onKeyUp={() => validateFormFields('phone')}
                                         />
                                         <div className="invalid-feedback">
                                             Invalid Phone number. Example: +19876543210
@@ -212,7 +212,7 @@ const ContactUsform = () => {
                                         placeholder="Message*" 
                                         required 
                                         maxLength="2002"
-                                        onInput={() => validateFormFields('message')}
+                                        onKeyUp={() => validateFormFields('message')}
                                     ></textarea>
                                     <div className="invalid-feedback">
                                         Whitespaces are not allowed in beginning & message should not be more than 2000 characters.

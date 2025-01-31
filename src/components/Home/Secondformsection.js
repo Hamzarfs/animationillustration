@@ -25,12 +25,13 @@ const SecondFormSec = () => {
     const validateFormFields = (formFieldName = null) => {
         let isValid;
         const regexes = {
-            name: /^[A-Za-z\s]{1,50}$/,
+            name: /^[a-zA-Z ]{1,50}$/,
          
             // email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
             email: /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/,
 
-            phone: /^\+?\d{10,15}$/,
+            phone: /^[\d\+\-]{10,15}$/,
+            
             message: /^(?!\s+$)[^\s].{0,1999}$/,
         };
 
@@ -135,13 +136,13 @@ const SecondFormSec = () => {
                                     className="form-control secondformsec-input"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    onInput={() => validateFormFields('name')}
+                                    onKeyUp={() => validateFormFields('name')}
                                     maxLength="52"
                                     required
                                 />
                                 {/* PopupForm jaisa invalid feedback */}
                                 <div className="invalid-feedback">
-                                    Not allowed more than 50 characters and it must be alphabetic
+                                Not allowed more than 50 characters and it must be in alphabet.
                                 </div>
                             </div>
                             <div className="mb-3">
@@ -152,7 +153,7 @@ const SecondFormSec = () => {
                                     className="form-control secondformsec-input"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    onInput={() => validateFormFields('email')}
+                                    onKeyUp={() => validateFormFields('email')}
                                     required
                                 />
                                 <div className="invalid-feedback">
@@ -167,12 +168,13 @@ const SecondFormSec = () => {
                                     className="form-control secondformsec-input"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    onInput={() => validateFormFields('phone')}
+                                    onKeyUp={() => validateFormFields('phone')}
                                      maxLength="16"
                                     required
+                                     pattern="^[\d\+\-]{10,15}$"
                                 />
                                 <div className="invalid-feedback">
-                                    Invalid Phone number. Example: +19876543210
+                                Please enter a valid phone number (between 10 and 15 digits, optional '+').
                                 </div>
                             </div>
                             <div className="mb-3">
@@ -183,7 +185,7 @@ const SecondFormSec = () => {
                                     rows="4"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    onInput={() => validateFormFields('message')}
+                                    onKeyUp={() => validateFormFields('message')}
                                     required
                                     maxLength="2002"
                                 ></textarea>

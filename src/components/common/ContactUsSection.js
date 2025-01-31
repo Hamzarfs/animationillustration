@@ -24,9 +24,9 @@ const ContactUsSection = () => {
     }
 
     const errorMessages = {
-        name: "Not allowed more than 50 characters and it must be alphabetic",
+        name: "Not allowed more than 50 characters and it must be in alphabet.",
         email: "Invalid Email address",
-        phone: "Invalid Phone number. Example: +19876543210",
+        phone: "Please enter a valid phone number (between 10 and 15 digits, optional '+').",
         message: "Whitespaces are not allowed in beginning & message should not be more than 2000 characters.",
     }
 
@@ -96,7 +96,7 @@ const ContactUsSection = () => {
                                     value={formData.name}
                                     onChange={handleChange}
                                     onInput={(e) => validateField('name', e.target.value)}
-                                    maxLength="52"
+                                    maxLength="51"
                                 />
                                 <label htmlFor="name">Please Enter Your Full Name*</label>
                                 {errors.name && <div className="invalid-feedback">{errors.name}</div>}

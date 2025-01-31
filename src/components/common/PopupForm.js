@@ -102,7 +102,7 @@ const PopupForm = () => {
                                     onChange={handleChange}
                                     maxLength="52" 
                                     required 
-                                    onInput={() => validateFormFields('name')} 
+                                    onKeyUp={() => validateFormFields('name')} 
                                 />
                                 <div className="invalid-feedback">
                                     Not allowed more than 50 characters and it must be alphabetic
@@ -119,7 +119,7 @@ const PopupForm = () => {
                                     value={formData.email} 
                                     onChange={handleChange} 
                                     required 
-                                    onInput={() => validateFormFields('email')} 
+                                    onKeyUp={() => validateFormFields('email')} 
                                 />
                                 <div className="invalid-feedback">
                                     Invalid Email address
@@ -138,7 +138,7 @@ const PopupForm = () => {
                                     required 
                                     pattern="\+?[0-9-]{10,15}"
                                      maxLength="16"
-                                    onInput={() => validateFormFields('phone')} 
+                                    onKeyUp={() => validateFormFields('phone')} 
                                 />
                                 <div className="invalid-feedback">
                                 Please enter a valid phone number (between 10 and 15 digits, optional '+').
@@ -156,7 +156,7 @@ const PopupForm = () => {
                                     value={formData.message} 
                                     maxLength="2002" 
                                     required
-                                    onInput={() => validateFormFields('message')}
+                                    onKeyUp={() => validateFormFields('message')}
                                 ></textarea>
                                 <div className="invalid-feedback">
                                     Whitespaces are not allowed in beginning & message should not be more than 2000 characters.
