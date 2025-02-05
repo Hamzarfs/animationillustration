@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import animationlogo from '../../images/animatedlogo.gif';
 import { NavLink } from 'react-router-dom';  // Change Link to NavLink
 import PopupForm from './PopupForm';
+import { NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <section id="header">
             <nav className="navbar navbar-expand-xl bg-body-tertiary">
@@ -43,12 +45,31 @@ const Header = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink
-                                    to="/services"
-                                    className="nav-link"
+                                <NavDropdown
+                                    title={
+                                        <NavLink
+                                            to="/services"
+                                            className="nav-link"
+                                            style={{ display: 'inline' }}
+                                        >
+                                            Services
+                                        </NavLink>
+                                    }
+                                    id="basic-nav-dropdown"
+                                    show={isOpen}
+                                    onMouseEnter={() => setIsOpen(true)}
+                                    onMouseLeave={() => setIsOpen(false)}
                                 >
-                                    Services
-                                </NavLink>
+                                    <NavDropdown.Item as={NavLink} to="/2d-animation-services">
+                                        2D Animation Services
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={NavLink} to="/services/3d-animation">
+                                        3D Animation Services
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={NavLink} to="/services/video-editing">
+                                        Video Editing
+                                    </NavDropdown.Item>
+                                </NavDropdown>
                             </li>
                             <li className="nav-item">
                                 <NavLink

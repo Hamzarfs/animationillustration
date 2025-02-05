@@ -276,3 +276,21 @@ button.header-btn {
   }
 
 }
+
+
+/* Desktop hover effect */
+@media (min-width: 992px) {
+  .nav-item:hover .dropdown-menu {
+      display: block !important;
+  }
+  
+  .nav-item .dropdown-menu {
+      margin-top: 0;
+      border: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  }
+  
+  .nav-item .dropdown-toggle {
+      cursor: pointer;
+  }
+}

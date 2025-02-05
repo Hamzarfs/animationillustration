@@ -1,0 +1,45 @@
+/* .servicesec {
+    background-color: #f9f9f9;
+  } */
+  
+  .choose-service-heading {
+    color: #333;
+  }
+  
+  .servicesec-box {
+    border: 3px solid #3DD8E0 !important;
+    padding: 20px;
+    /* padding: 20px 25px 61px 20px !important; */
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    height: 307px;
+    text-align: start;
+}
+  .servicesec-icon {
+    top: -30px;
+    left: 20px;
+  }
+  
+  .servicesec-icon img {
+    width: 70px;
+    height: 60px;
+  }
+
+
+  @media (max-width: 767px)
+  {
+  .servicesec-box {
+    border: 3px solid #3DD8E0 !important;
+    padding: 20px;
+    /* padding: 20px 25px 61px 20px !important; */
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    height: 207px;
+    text-align: start;
+    margin-top: 20px;
+}
+
+}
+  
