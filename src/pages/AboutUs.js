@@ -20,6 +20,14 @@ import HeroSection from '../components/common/HeroSection';
 import heroBgImg from '../images/aboutusbanner.png'
 import AboutServicesSlider from '../Aboutus/aboutserviceslider';
 import ServicesSlider from '../components/Services/Serviceslider';
+import customserviceimage1 from "../images/customservice1.gif";
+import customserviceimage2 from "../images/customservice2.gif";
+import customserviceimage3 from "../images/customservice3.gif";
+import customserviceimage4 from "../images/explain.gif";
+import customserviceimage5 from "../images/customservice5.gif";
+import customserviceimage6 from "../images/customservice6.gif";
+import customserviceimage7 from "../images/customservice7.gif";
+import customserviceimage8 from "../images/customservice8.gif";
 
 const About = () => {
 
@@ -79,6 +87,51 @@ const About = () => {
             answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
         }
     ];
+
+
+    const servicesData = [
+        {
+            image: customserviceimage1,
+            title: "Logo Animation",
+            description: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy."
+        },
+        {
+            image: customserviceimage2,
+            title: "2D Animation",
+            description: "Translate your imagination into amazing 2D animations. Character animations and background designs are crafted for you by expert artists, providing you with rich visual and engaging content."
+        },
+        {
+            image: customserviceimage3,
+            title: "3D Animation",
+            description: "Bring lifelike 3D animations that enthrall your audience. From product visualization to cinematic sequences, our expert team does everything."
+        },
+        {
+            image: customserviceimage4,
+            title: "Explainer Video",
+            description: "Make your cumbersome concepts easy with our great explainer videos using simple and easy-to-understand visuals with short stories to clarify and educate your audience."
+        },
+        {
+            image: customserviceimage5,
+            title: "Motion Graphics",
+            description: "Add some dramatic effects to your videos with motion graphics services. Ranging from simple transitions to complex animations, our creative capacity knows no bounds."
+        },
+        {
+            image: customserviceimage6,
+            title: "Whiteboard Animation",
+            description: "Your message will be unforgettable with our whiteboard animations. We use illustrations drawn by hand and voiceovers to explain complex material in a simple, engaging manner."
+        },
+        {
+            image: customserviceimage7,
+            title: "3D Architecture Animation",
+            description: "You can now have your great design come alive through our architectural animations. We can visualize practically anything from buildings to interiors and landscapes."
+        },
+        {
+            image: customserviceimage8,
+            title: "Cartoon Animation",
+            description: "Enjoy and enlighten your audiences with our cartoon animations. Our team will create animated cartoons that entertain, soothe the heart, and educate."
+        },
+    ];
+
     const heroSection = {
         title: 'About Us',
         image: heroBgImg,
@@ -124,7 +177,11 @@ const About = () => {
                 customservicedescription={customservicedescription}
                 customservicesteps={customservicesteps}
             /> */}
-            <ServicesSlider/>
+            <ServicesSlider
+                title="Our Professional <span class='lightblue-h2'>Video Production</span> Services"
+                description="As a premium video production company, we offer a wide range of services, including"
+                services={servicesData}
+            />
 
             <CtaSection />
 

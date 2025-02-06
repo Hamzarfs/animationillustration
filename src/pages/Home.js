@@ -8,10 +8,19 @@ import whyservice3 from '../images/whyservice3.gif';
 import whyservice4 from '../images/whyservice4.gif';
 import whyservice5 from '../images/whyservice5.gif';
 import whyservice6 from '../images/whyservice6.gif';
-import customserviceimage1 from '../images/customservice1.gif';
-import customserviceimage2 from '../images/customservice2.gif';
-import customserviceimage3 from '../images/customservice3.gif';
-import customserviceimage4 from '../images/customservice4.png';
+import customserviceimage1 from "../images/customservice1.gif";
+import customserviceimage2 from "../images/customservice2.gif";
+import customserviceimage3 from "../images/customservice3.gif";
+import customserviceimage4 from "../images/explain.gif";
+import customserviceimage5 from "../images/customservice5.gif";
+import customserviceimage6 from "../images/customservice6.gif";
+import customserviceimage7 from "../images/customservice7.gif";
+import customserviceimage8 from "../images/customservice8.gif";
+import commitmentImage from "../images/triplecomment1.gif";
+import commitmentservice1 from "../images/whyservice1.png";
+import commitmentservice2 from "../images/whyservice2.png";
+import commitmentservice3 from "../images/whyservice3.png";
+import commitmentservice4 from "../images/whyservice4.png";
 import faqimg from '../images/faqimg.gif';
 import imageanimation from '../images/portfolio3.gif';
 import Banner from '../components/common/banner';
@@ -105,6 +114,71 @@ const Home = () => {
         }
     ];
 
+    const servicesData = [
+        { 
+            image: customserviceimage1,
+             title: "Logo Animation",
+              description: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy." 
+            },
+        {
+             image: customserviceimage2,
+             title: "2D Animation",
+              description: "Translate your imagination into amazing 2D animations. Character animations and background designs are crafted for you by expert artists, providing you with rich visual and engaging content."
+             },
+        { 
+            image: customserviceimage3,
+             title: "3D Animation",
+              description: "Bring lifelike 3D animations that enthrall your audience. From product visualization to cinematic sequences, our expert team does everything."
+             },
+        { 
+            image: customserviceimage4,
+             title: "Explainer Video",
+              description: "Make your cumbersome concepts easy with our great explainer videos using simple and easy-to-understand visuals with short stories to clarify and educate your audience." 
+            },
+        { 
+            image: customserviceimage5, 
+            title: "Motion Graphics",
+             description: "Add some dramatic effects to your videos with motion graphics services. Ranging from simple transitions to complex animations, our creative capacity knows no bounds."
+             },
+        {
+             image: customserviceimage6,
+              title: "Whiteboard Animation",
+               description: "Your message will be unforgettable with our whiteboard animations. We use illustrations drawn by hand and voiceovers to explain complex material in a simple, engaging manner." 
+            },
+        { image: customserviceimage7,
+             title: "3D Architecture Animation",
+              description: "You can now have your great design come alive through our architectural animations. We can visualize practically anything from buildings to interiors and landscapes." 
+            },
+        { 
+            image: customserviceimage8,
+             title: "Cartoon Animation",
+              description: "Enjoy and enlighten your audiences with our cartoon animations. Our team will create animated cartoons that entertain, soothe the heart, and educate." 
+            },
+      ];
+
+      const features = [
+        {
+          image: commitmentservice1,
+          title: "Improve Branding",
+          text: "A good brand identity is the most important foundation on which the success of a business stands. Our video production service elevates your brand by creating wonderful visual storytelling that captures your target audience.",
+        },
+        {
+          image: commitmentservice2,
+          title: "Increase Engagement",
+          text: "Video content is an impeccable mode of engagement for your audience. The video production services reproduce compelling videos for greater social media engagement, website traffic, and conversions.",
+        },
+        {
+          image: commitmentservice3,
+          title: "Communicate Messaging",
+          text: "One of the many facets of being the best explainer video production agency is having such wonderful and captivating videos to create social media engagement with higher website visitors and increase conversions. Spend money on professional video production and bring your brand to new heights as it fulfills the marketing mission.",
+        },
+        {
+          image: commitmentservice4,
+          title: "Guaranteed Quality & Delivery",
+          text: "There is always a delivery of high quality with top-notch animation, with deadlines attested to improved professionalism. Our experienced team focuses on operational efficiency along with precision to ensure your project is delivered exactly as it was originally intended.",
+        },
+      ];
+
     return (
         <div>
             <Helmet>
@@ -152,11 +226,18 @@ const Home = () => {
             buttonUrl="https://www.facebook.com/"
             />
             <PortfolioGallery />
-            <ServicesSlider/>
-
-          
+            <ServicesSlider
+      title="Our Professional <span class='lightblue-h2'>Video Production</span> Services"
+      description="As a premium video production company, we offer a wide range of services, including"
+      services={servicesData}
+    />
             <TrackRecord />
-            <CommitmentClient />
+            <CommitmentClient
+  title="Why Choose Our Video Production Services"
+  description="When you put your faith in our video production services, you are actually putting it into a team of professional storytellers who know how to grab your audience within seconds."
+  commitmentImage={commitmentImage}
+  features={features}
+/>;
             <FAQSection faqs={faqs} image={faqimg} />
             <Footer />
 
