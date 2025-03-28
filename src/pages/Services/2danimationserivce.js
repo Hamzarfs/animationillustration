@@ -124,92 +124,79 @@ const twodaydanimation = () => {
 
   const servicessliderData = [
     {
-      image: customserviceimage1,
-      title: "Logo Animation",
-      description: "Get clients with our logo animations. Our powerfully creative and unique animations will turn your logo into eye candy."
+        image: customserviceimage1,
+        title: "Project Managers",
+        description: "Your dedicated project manager ensures that each 2D animation project stays on track, meeting deadlines and maintaining our commitment to timely delivery."
     },
     {
-      image: customserviceimage2,
-      title: "2D Animation",
-      description: "Translate your imagination into amazing 2D animations. Character animations and background designs are crafted for you by expert artists, providing you with rich visual and engaging content."
+        image: customserviceimage2,
+        title: "Art Director",
+        description: "Our seasoned art director will guide the artistic process, collaborating with you to create 2D animations that align perfectly with your vision and project goals."
     },
     {
-      image: customserviceimage3,
-      title: "3D Animation",
-      description: "Bring lifelike 3D animations that enthrall your audience. From product visualization to cinematic sequences, our expert team does everything."
+        image: customserviceimage3,
+        title: "2D Animation Team Lead",
+        description: "The animation team lead, with experience delivering over 1000 successful projects, will manage your animation team to ensure top-quality results."
     },
     {
-      image: customserviceimage4,
-      title: "Explainer Video",
-      description: "Make your cumbersome concepts easy with our great explainer videos using simple and easy-to-understand visuals with short stories to clarify and educate your audience."
+        image: customserviceimage4,
+        title: "2D Artist",
+        description: "Our in-house creative team of 2D artists designs your characters, props, and backgrounds from the ground up, ensuring every detail reflects your brand."
     },
     {
-      image: customserviceimage5,
-      title: "Motion Graphics",
-      description: "Add some dramatic effects to your videos with motion graphics services. Ranging from simple transitions to complex animations, our creative capacity knows no bounds."
-    },
-    {
-      image: customserviceimage6,
-      title: "Whiteboard Animation",
-      description: "Your message will be unforgettable with our whiteboard animations. We use illustrations drawn by hand and voiceovers to explain complex material in a simple, engaging manner."
-    },
-    {
-      image: customserviceimage7,
-      title: "3D Architecture Animation",
-      description: "You can now have your great design come alive through our architectural animations. We can visualize practically anything from buildings to interiors and landscapes."
-    },
-    {
-      image: customserviceimage8,
-      title: "Cartoon Animation",
-      description: "Enjoy and enlighten your audiences with our cartoon animations. Our team will create animated cartoons that entertain, soothe the heart, and educate."
-    },
-  ];
-
-  const features = [
-    {
-      image: commitmentservice1,
-      title: "Improve Branding",
-      text: "A good brand identity is the most important foundation on which the success of a business stands. Our video production service elevates your brand by creating wonderful visual storytelling that captures your target audience.",
-    },
-    {
-      image: commitmentservice2,
-      title: "Increase Engagement",
-      text: "Video content is an impeccable mode of engagement for your audience. The video production services reproduce compelling videos for greater social media engagement, website traffic, and conversions.",
-    },
-    {
-      image: commitmentservice3,
-      title: "Communicate Messaging",
-      text: "One of the many facets of being the best explainer video production agency is having such wonderful and captivating videos to create social media engagement with higher website visitors and increase conversions. Spend money on professional video production and bring your brand to new heights as it fulfills the marketing mission.",
-    },
-    {
-      image: commitmentservice4,
-      title: "Guaranteed Quality & Delivery",
-      text: "There is always a delivery of high quality with top-notch animation, with deadlines attested to improved professionalism. Our experienced team focuses on operational efficiency along with precision to ensure your project is delivered exactly as it was originally intended.",
-    },
-  ];
-
-  const faqs = [
-    {
-      question: "What is the process of producing a video?",
-      answer: "Our video production process consists of a few steps: consulting, pre-production, production, post-production, and devising."
-    },
-    {
-      question: "How long should my video be?",
-      answer: "The ideal length of your video depends on your purpose and intended audience. Shorter videos are preferred for social media, while longer videos develop organically over time with the material's theme."
-    },
-    {
-      question: "What is the cost of an explainer video?",
-      answer: "The cost of creating an explainer video depends on the duration, complexity, type of animation applied, and total time spent on it."
-    },
-    {
-      question: "So how many rounds of revisions do I get?",
-      answer: "Every package includes different rounds of revisions. However, our company strives to provide you with a completely satisfying product."
-    },
-    {
-      question: "Why consider Animation Rush as your video animation company?",
-      answer: "Animation Rush is a one-stop shop for all kinds of video animation work. It has a team of the best and most brilliant artists and animators to do the magic."
+        image: customserviceimage5,
+        title: "Review and Delivery",
+        description: "Our skilled 2D animators bring your ideas to life, focusing on every aspect from facial expressions to gestures, movements, and visual effects, making sure your original vision is fully realized."
     }
-  ];
+];
+
+
+const features = [
+  {
+      image: commitmentservice1,
+      title: "Dedicated 2D Animation Team",
+      text: "Our team works exclusively on your project, ensuring attention to detail with swift results."
+  },
+  {
+      image: commitmentservice2,
+      title: "Industry-Specific Animation",
+      text: "We provide animation solutions designed to align with your brand’s goals and connect with your target audience."
+  },
+  {
+      image: commitmentservice3,
+      title: "Reliable Partner",
+      text: "As a trusted name in 2D animation outsourcing, we ensure smooth project execution and consistent quality."
+  },
+  {
+      image: commitmentservice4,
+      title: "Global Recognition",
+      text: "Recognized for our innovative approach, we are one of the leading 2D animation studios in the USA."
+  }
+];
+
+const faqs = [
+  {
+      question: "What is 2D animation?",
+      answer: "2D animation refers to the creation of moving images in a two-dimensional space, typically using flat artwork. It involves animating characters, backgrounds, and objects in a sequence to tell a story or convey a message."
+  },
+  {
+      question: "How long does it take to create a 2D animation?",
+      answer: "The timeline for creating a 2D animation can vary depending on the complexity and length of the project. On average, it can take anywhere from a few weeks to a couple of months to complete."
+  },
+  {
+      question: "What are the benefits of using 2D animation for marketing?",
+      answer: "2D animation helps simplify complex ideas, makes content more engaging, and enhances brand storytelling, all while increasing retention rates among viewers."
+  },
+  {
+      question: "What is the cost of a 2D animation project?",
+      answer: "The cost of 2D animation can vary based on factors such as the length, complexity, and style of animation. It's best to discuss your requirements with an animation studio for an accurate estimate."
+  },
+  {
+      question: "Can 2D animation be used for both small and large businesses?",
+      answer: "Yes, 2D animation is a versatile tool that can be scaled to suit the needs of businesses of all sizes, whether you're creating a short explainer video or a full-length animated advertisement."
+  }
+];
+
 
 
   return (
@@ -226,7 +213,7 @@ const twodaydanimation = () => {
       <ServiceSec heading="Professional 2D Animation Services in USA" services={servicesData} />
       <ImageRightBanner
         // subHeading="ABOUT US"
-        heading="What Makes Our 2D Animation Production Unique?</"
+        heading="What Makes Our 2D Animation Production Unique?"
         // headinglightblue=" Solutions"
         // heading2=" Crafted for Your Success"
         description={
@@ -251,14 +238,14 @@ const twodaydanimation = () => {
         industries={industriesData}
       />
       <ServicesSlider
-        title="Our Professional <span class='lightblue-h2'>Video Production</span> Services"
-        description="As a premium video production company, we offer a wide range of services, including"
+        title="Our Expert <span class='lightblue-h2'>Video Production</span> Team"
+        description="We take immense pride in having one of the most skilled and qualified 2D animation teams in the industry. Here’s the talented team that will bring your vision to life:"
         services={servicessliderData}
       />
 
       <CommitmentClient
-        title="Why Choose Our Video Production Services"
-        description="When you put your faith in our video production services, you are actually putting it into a team of professional storytellers who know how to grab your audience within seconds."
+        title="Why Choose Animation Rush for Your 2D Animation Needs?"
+        description="Our expert 2D animation team is dedicated to delivering high-quality animations while supporting you through every phase of your project."
         commitmentImage={commitmentImage}
         features={features}
       />;

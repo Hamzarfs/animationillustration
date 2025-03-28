@@ -19,9 +19,9 @@ const FAQSection = ({ faqs, image }) => {
                 <div className="row">
                     {/* First Column for FAQ */}
                     <div className="col-md-6">
-                        <h2 className="faqsection-heading">
+                        <h5 className="faqsection-heading">
                             Frequently <span className="lightblue-h2">Asked</span> Questions
-                        </h2>
+                        </h5>
                         <div className="faqsection-list">
                             {faqs.map((faq, index) => (
                                 <div key={index} className="faqsection-item">

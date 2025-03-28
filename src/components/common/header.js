@@ -63,7 +63,7 @@ const Header = () => {
                                     <NavDropdown.Item as={NavLink} to="/2d-animation-services">
                                         2D Animation Services
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item as={NavLink} to="/services/3d-animation">
+                                    <NavDropdown.Item as={NavLink} to="/3d-animation-services">
                                         3D Animation Services
                                     </NavDropdown.Item>
                                     <NavDropdown.Item as={NavLink} to="/services/video-editing">

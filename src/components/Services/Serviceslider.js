@@ -9,7 +9,7 @@ const ServicesSlider = ({ title, description, services }) => {
   return (
     <section id="servicesslider" className="servicesslider">
       <div className="container">
-        <h2 className="choose-service-heading font-weight-bold" dangerouslySetInnerHTML={{ __html: title }} />
+        <h3 className="choose-service-heading font-weight-bold" dangerouslySetInnerHTML={{ __html: title }} />
         <p className="choose-service-description">{description}</p>
 
         <Swiper

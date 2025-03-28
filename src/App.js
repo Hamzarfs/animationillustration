@@ -16,6 +16,7 @@ import Portfolio from './pages/Portfolio';
 import BlogPage from './pages/Blog';
 import BlogsPage from './pages/Blogs';
 import Twodanimation from './pages/Services/2danimationserivce';
+import Threedayanimation from './pages/Services/3danimationserivce';
 
 // <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
@@ -36,6 +37,7 @@ const App = () => {
                     <Route path="/:slug" element={<BlogPage />} />
                     <Route path="/blogs" element={<BlogsPage />} />
                     <Route path="/2d-animation-services" element={<Twodanimation />} />
+                    <Route path="/3d-animation-services" element={<Threedayanimation />} />
                 </Routes>
             </Router>
         </HelmetProvider>
