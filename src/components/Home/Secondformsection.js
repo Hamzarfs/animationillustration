@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../SecondFormSec.css";
 import clutchicon from "../../images/clutchicon.png";
 import trust from "../../images/trustpiloticon.png";
 import bark from "../../images/barkicon.png";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import formbg from "../../images/formbg.webp";  // <-- import image here
 
 const SecondFormSec = () => {
     const navigate = useNavigate();
@@ -16,10 +17,15 @@ const SecondFormSec = () => {
         message: "",
     });
 
+
+    
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
+
+
 
     // PopupForm wali validation yahan add ki hai
     const validateFormFields = (formFieldName = null) => {
@@ -82,7 +88,13 @@ const SecondFormSec = () => {
     };
 
     return (
-        <section className="secondformsec">
+        <section className="secondformsec ">
+              {/* Hexagon Animation Background */}
+            <div className="hexagon-background">
+                {[...Array(20)].map((_, i) => (
+                    <div key={i} className="hexagon"></div>
+                ))}
+            </div>
             <div className="secondformsec-container container " >
                 <div className="row align-items-center">
                     {/* Left Column */}
@@ -120,7 +132,15 @@ const SecondFormSec = () => {
                     </div>
 
                     {/* Right Column */}
-                    <div className="col-lg-6 col-md-12">
+                    <div className="col-lg-6 col-md-12"
+                         style={{
+              backgroundImage: `url(${formbg})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              padding: "40px",
+              borderRadius: "12px", // optional: thoda rounded corner
+            }}>
                         <form 
                             className="secondformsec-form p-4" 
                             onSubmit={handleSubmit} 

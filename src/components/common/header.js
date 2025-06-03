@@ -44,7 +44,15 @@ const Header = () => {
                                     About Us
                                 </NavLink>
                             </li>
-                            <li className="nav-item">
+                              <li className="nav-item">
+                                <NavLink
+                                    to="/services"
+                                    className="nav-link"
+                                >
+                                    Services
+                                </NavLink>
+                            </li>
+                            {/* <li className="nav-item">
                                 <NavDropdown
                                     title={
                                         <NavLink
@@ -70,7 +78,7 @@ const Header = () => {
                                         Video Editing
                                     </NavDropdown.Item>
                                 </NavDropdown>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <NavLink
                                     to="/our-process"

@@ -1,8 +1,5 @@
 /* AwardsLogo Section */
 
-
-
-
 .choose-service-icon-box img {
     width: 71px;
 }
@@ -102,6 +99,10 @@ h2.choose-service-heading.font-weight-bold {
 }
 
 /* End uniquesection */
+
+
+
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 640px) {

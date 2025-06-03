@@ -37,6 +37,10 @@ import FAQSection from '../components/common/faqsection';
 import Footer from '../components/common/footer';
 import { Helmet } from 'react-helmet-async';
 import ServicesSlider from '../components/Services/Serviceslider';
+import VideoBanner from '../components/Home/VideoBanner';
+import Bannervideo from '../components/Home/Bannervideo';
+import TransparentHeader from '../components/common/TransparentHeader';
+import AnimatedBanner from '../components/common/AnimatedBanner';
 
 
 const Home = () => {
@@ -186,15 +190,19 @@ const Home = () => {
                 <meta name="description" content="We're a creative video production company specializing in animated explainers, demo videos, product showcases, and other innovative video content." />
                 <link rel="canonical" href="https://animationrush.com" />
             </Helmet>
-            <Header />
+            {/* <Header /> */}
+            <TransparentHeader/>
+            <Bannervideo/>
+            {/* <AnimatedBanner/> */}
+            {/* <VideoBanner/>
             <Banner
                 subheading="Bringing Your Ideas to Life with Expertise and Creativity"
                 heroTitle="Professional Video Production Company Your Vision, Our Expertise"
                 description="As a creative video production company, we shape bright and beautiful developing videos. Our team of exemplary professionals will bring your ideas from concept to completion. Whether commercial, explanatory, or brand-film cinematic, we got it for you."
                 buttonText="Get Started"
-                // buttonLink="/contact-us" // Replace with your actual link
-                backgroundImage={bannerImage} // Provide the background image URL
-            />
+               
+                backgroundImage={bannerImage} 
+            /> */}
             <SecondFormSec />
             <AwardsLogo />
             <WhyChooseService
